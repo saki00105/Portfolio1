@@ -52,3 +52,16 @@ function theme_setup(){
 }
 add_action( 'after_setup_theme', 'theme_setup');
 
+
+
+//WordPressの処理で現在のユーザーがセットされたら実行
+add_action('set_current_user', function (){
+
+	if(current_user_can('administrator')){ //管理者ユーザーなら
+		$_SESSION["_wp_debug"] = 1; //セッション内にデバッグ有効フラグを保存
+	}else{
+		$_SESSION["_wp_debug"] = 0; //セッション内にデバッグ無効フラグを保存
+	}
+	date_default_timezone_set( 'Asia/Tokyo' ); //日本時間の設定
+
+});
