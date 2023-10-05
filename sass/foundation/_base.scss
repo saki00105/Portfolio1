@@ -1,6 +1,24 @@
+@use "./variable" as var;
 
 
 //固定ページタイトル非表示
 .menu{
     display: none;
+}
+// .html{
+//     background:var.$dark-blue;
+
+// }
+
+body{
+    font-size: 1.6rem;
+    line-height: 4rem;
+    font-family: 'Montserrat', 'M  PLUS Rounded 1c',sans-serif;
+    color: var.$font-blue;
+    background:var.$dark-blue;
+
+}
+a:not(cite>a){
+    color: var.$font-blue;
+    text-decoration: none;
 }
