@@ -40,8 +40,34 @@ p, h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
+body {
+  font-size: 1.6rem;
+  line-height: 4rem;
+  font-family: "Montserrat", "M  PLUS Rounded 1c", sans-serif;
+  color: #AEC7E9;
+  background: #05316D;
+}
+
+a:not(cite > a) {
+  color: #AEC7E9;
+  text-decoration: none;
+}
+
 .menu {
   display: none;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 4rem;
+  font-family: "Montserrat", "M  PLUS Rounded 1c", sans-serif;
+  color: #AEC7E9;
+  background: #05316D;
+}
+
+a:not(cite > a) {
+  color: #AEC7E9;
+  text-decoration: none;
 }
 
 /*
