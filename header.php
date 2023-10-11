@@ -12,8 +12,10 @@
     </head>
 
     <body <?php body_class(); ?>>
-        <header class="header">
-            <h1 class="header__ttl"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></h1>
+        <header class="l-header">
+            <h1 class="p-header__ttl">
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?>
+            </h1>
            
           
             <?php wp_nav_menu( array(
