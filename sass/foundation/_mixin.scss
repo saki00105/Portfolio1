@@ -1,0 +1,7 @@
+//backgroundの設定
+@mixin bg-img($path, $size: cover,$pos: center center, $repeat: no-repeat) {
+    background-image:($path);
+    background-size: $size;
+    background-position: $pos;
+    background-repeat: $repeat;
+}

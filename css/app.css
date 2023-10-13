@@ -3,48 +3,88 @@
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
 */
-*, *::before, *::after {
+/* box-sizing: border-box;を設定 */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-* {
+/* フォントサイズの拡大を防ぐ */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* デフォルトのマージンを削除、作成するCSSの制御を改善するため */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
   margin: 0;
 }
 
-html, body {
-  height: 100%;
+/* リストのスタイルを削除、これはデフォルトのスタイルが削除されることを示唆します */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
 }
 
+/* bodyのデフォルトを設定 */
 body {
+  min-height: 100vh;
   line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
 }
 
-img, picture, video, canvas, svg {
-  display: block;
+/* 見出しやインタラクティブ要素のline-heightを設定 */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* 見出しのテキスト折り返しをbalanceに設定 */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* classを持たないa要素はデフォルトのスタイルを継承 */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* 画像の扱いを簡単にする */
+img,
+picture {
   max-width: 100%;
+  display: block;
 }
 
-input, button, textarea, select {
+/* inputやbuttonなどのfontは継承 */
+input, button,
+textarea, select {
   font: inherit;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
-  overflow-wrap: break-word;
+/* rows属性のないtextareasが小さくならないようにする */
+textarea:not([rows]) {
+  min-height: 10em;
 }
 
-#root, #__next {
-  isolation: isolate;
+/* アンカーされている要素には余分なスクロールマージンが必要 */
+:target {
+  scroll-margin-block: 5ex;
 }
 
-.menu {
-  display: none;
+html.html {
+  margin-top: 0 !important;
 }
 
 body {
   font-size: 1.6rem;
   line-height: 4rem;
-  font-family: "Montserrat", "M  PLUS Rounded 1c", sans-serif;
+  font-family: "Baloo 2", "M  PLUS Rounded 1c", sans-serif;
   color: #AEC7E9;
   background: #05316D;
 }
@@ -54,14 +94,14 @@ a:not(cite > a) {
   text-decoration: none;
 }
 
-.menu {
-  display: none;
+html.html {
+  margin-top: 0 !important;
 }
 
 body {
   font-size: 1.6rem;
   line-height: 4rem;
-  font-family: "Montserrat", "M  PLUS Rounded 1c", sans-serif;
+  font-family: "Baloo 2", "M  PLUS Rounded 1c", sans-serif;
   color: #AEC7E9;
   background: #05316D;
 }
@@ -75,41 +115,92 @@ a:not(cite > a) {
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
 */
-*, *::before, *::after {
+/* box-sizing: border-box;を設定 */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-* {
+/* フォントサイズの拡大を防ぐ */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* デフォルトのマージンを削除、作成するCSSの制御を改善するため */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
   margin: 0;
 }
 
-html, body {
-  height: 100%;
+/* リストのスタイルを削除、これはデフォルトのスタイルが削除されることを示唆します */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
 }
 
+/* bodyのデフォルトを設定 */
 body {
+  min-height: 100vh;
   line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
 }
 
-img, picture, video, canvas, svg {
-  display: block;
+/* 見出しやインタラクティブ要素のline-heightを設定 */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* 見出しのテキスト折り返しをbalanceに設定 */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* classを持たないa要素はデフォルトのスタイルを継承 */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* 画像の扱いを簡単にする */
+img,
+picture {
   max-width: 100%;
+  display: block;
 }
 
-input, button, textarea, select {
+/* inputやbuttonなどのfontは継承 */
+input, button,
+textarea, select {
   font: inherit;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
-  overflow-wrap: break-word;
+/* rows属性のないtextareasが小さくならないようにする */
+textarea:not([rows]) {
+  min-height: 10em;
 }
 
-#root, #__next {
-  isolation: isolate;
+/* アンカーされている要素には余分なスクロールマージンが必要 */
+:target {
+  scroll-margin-block: 5ex;
 }
 
-.l-header {
-  background-image: url(http://localhost:10028/wp-content/uploads/2023/10/top-コピー.png);
+.p-header__layer {
+  background-image: url(http://localhost:10028/wp-content/uploads/2023/10/top-pc.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   height: 100vh;
+  z-index: -10;
+}
+
+.p-header {
+  text-align: center;
+  padding-top: 10rem;
+  font-size: 4rem;
+  letter-spacing: 1.5rem;
 }/*# sourceMappingURL=app.css.map */
