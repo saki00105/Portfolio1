@@ -1,0 +1,14 @@
+.p-header__layer{
+    @include bg-img( url(http://localhost:10028/wp-content/uploads/2023/10/top-pc.png) );
+    height: 100vh;
+    z-index: -10;
+
+
+}
+.p-header{
+    text-align: center;
+    padding-top: 10rem;
+    font-size: 4rem;
+    letter-spacing: 1.5rem;
+}
+

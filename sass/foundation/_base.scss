@@ -1,19 +1,16 @@
 @use "./variable" as var;
 
 
-//固定ページタイトル非表示
-.menu{
-    display: none;
-}
-// .html{
-//     background:var.$dark-blue;
+html.html{
+    margin-top: 0 !important;
 
-// }
+}
+
 
 body{
     font-size: 1.6rem;
     line-height: 4rem;
-    font-family: 'Montserrat', 'M  PLUS Rounded 1c',sans-serif;
+    font-family: 'Baloo 2', 'M  PLUS Rounded 1c',sans-serif;
     color: var.$font-blue;
     background:var.$dark-blue;
 

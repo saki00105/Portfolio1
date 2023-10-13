@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="<?php language_attributes(); ?>">
+<html lang="<?php language_attributes(); ?>" class="html">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,16 +12,14 @@
     </head>
 
     <body <?php body_class(); ?>>
+
         <header class="l-header">
-            <h1 class="p-header__ttl">
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?>
+        <div class="p-header__layer">
+
+            <h1 class="p-header">
+                <a class="p-header__title" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?>
             </h1>
-           
-          
-            <?php wp_nav_menu( array(
-                'theme_location' => 'header-menu',
-                ) );
-            ?>
+        </div>
         </header>
     
     </body>
