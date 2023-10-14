@@ -17,6 +17,7 @@
 @import "layout/_l-header";
 // @import "layout/_main";
 // @import "layout/_sidebar";
+@import "layout/_l-inner";
 
 // ==========================================================================
 // Object
@@ -40,6 +41,9 @@
 // @import "object/project/_gallery";
 // @import "object/project/_profile";
 @import "object/project/_p-header";
+@import "object/project/_p-skills";
+@import "object/project/_p-main";
+
 
 // -----------------------------------------------------------------
 // Utility

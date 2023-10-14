@@ -6,9 +6,17 @@
 
 }
 .p-header{
-    text-align: center;
-    padding-top: 10rem;
+    padding-top: 17rem;
     font-size: 4rem;
     letter-spacing: 1.5rem;
+    text-align: left;
+    display: flex;
+    justify-content: flex-end;
+
+    &__title{
+        width: 50%;
+        display: inline-block;
+        padding-right: 10rem;
+    }
 }
 

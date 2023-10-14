@@ -189,6 +189,15 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
+.l-inner__contents {
+  margin: 0 auto;
+  width: 45%;
+}
+.l-inner__contact {
+  margin: 0 auto;
+  width: 70%;
+}
+
 .p-header__layer {
   background-image: url(http://localhost:10028/wp-content/uploads/2023/10/top-pc.png);
   background-size: cover;
@@ -199,8 +208,24 @@ textarea:not([rows]) {
 }
 
 .p-header {
-  text-align: center;
-  padding-top: 10rem;
+  padding-top: 17rem;
   font-size: 4rem;
   letter-spacing: 1.5rem;
+  text-align: left;
+  display: flex;
+  justify-content: flex-end;
+}
+.p-header__title {
+  width: 50%;
+  display: inline-block;
+  padding-right: 10rem;
+}
+
+.p-skills__layer {
+  background-image: url(http://localhost:10028/wp-content/uploads/2023/10/skill-コピー.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  z-index: -10;
 }/*# sourceMappingURL=app.css.map */
