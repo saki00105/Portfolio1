@@ -3,9 +3,11 @@
 
 html.html{
     margin-top: 0 !important;
-
 }
 
+html{
+    height: 100%;
+}
 
 body{
     font-size: 1.6rem;
@@ -13,7 +15,7 @@ body{
     font-family: 'Baloo 2', 'M  PLUS Rounded 1c',sans-serif;
     color: var.$font-blue;
     background:var.$dark-blue;
-
+    height: 100%;
 }
 a:not(cite>a){
     color: var.$font-blue;

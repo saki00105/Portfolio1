@@ -1,6 +1,11 @@
+@use "../../foundation/variable" as var;
+@use "../../foundation/mixin" as m;
 
-.p-skills__layer{
-    @include bg-img( url(http://localhost:10028/wp-content/uploads/2023/10/skill-コピー.png) );
-    height: 100vh;
+.p-skills{
+    @include bg-img( url(http://localhost:10028/wp-content/uploads/2023/10/skill-2.png) );
+    // background-size: contain;
+    height: 100%;
+    width: 100%;
     z-index: -10;
+    // background-color: var.$white;
 }

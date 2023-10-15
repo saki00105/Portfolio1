@@ -81,12 +81,17 @@ html.html {
   margin-top: 0 !important;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-size: 1.6rem;
   line-height: 4rem;
   font-family: "Baloo 2", "M  PLUS Rounded 1c", sans-serif;
   color: #AEC7E9;
   background: #05316D;
+  height: 100%;
 }
 
 a:not(cite > a) {
@@ -98,12 +103,17 @@ html.html {
   margin-top: 0 !important;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-size: 1.6rem;
   line-height: 4rem;
   font-family: "Baloo 2", "M  PLUS Rounded 1c", sans-serif;
   color: #AEC7E9;
   background: #05316D;
+  height: 100%;
 }
 
 a:not(cite > a) {
@@ -221,11 +231,16 @@ textarea:not([rows]) {
   padding-right: 10rem;
 }
 
-.p-skills__layer {
-  background-image: url(http://localhost:10028/wp-content/uploads/2023/10/skill-コピー.png);
+.p-skills {
+  background-image: url(http://localhost:10028/wp-content/uploads/2023/10/skill-2.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   z-index: -10;
+}
+
+.p-main {
+  height: 100%;
 }/*# sourceMappingURL=app.css.map */
