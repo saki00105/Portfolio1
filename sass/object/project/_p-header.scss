@@ -12,11 +12,10 @@
     text-align: left;
     display: flex;
     justify-content: flex-end;
-
-    &__title{
-        width: 50%;
+    > a{
+        width: 48%;
         display: inline-block;
-        padding-right: 10rem;
+        padding-right: 20rem;
     }
 }
 

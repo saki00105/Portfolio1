@@ -2,10 +2,15 @@
 @use "../../foundation/mixin" as m;
 
 .p-skills{
-    @include bg-img( url(http://localhost:10028/wp-content/uploads/2023/10/skill-2.png) );
+    @include bg-img( url(http://localhost:10028/wp-content/uploads/2023/10/IMG_0933.png) );
     // background-size: contain;
     height: 100%;
     width: 100%;
     z-index: -10;
     // background-color: var.$white;
+
+    @include m.pc{
+        background-size: contain;
+        max-height: 70rem;
+    }
 }

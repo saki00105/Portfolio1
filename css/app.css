@@ -87,16 +87,25 @@ html {
 
 body {
   font-size: 1.6rem;
-  line-height: 4rem;
   font-family: "Baloo 2", "M  PLUS Rounded 1c", sans-serif;
   color: #AEC7E9;
   background: #05316D;
   height: 100%;
+  letter-spacing: 0.2rem;
 }
 
 a:not(cite > a) {
   color: #AEC7E9;
   text-decoration: none;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.2rem;
+  font-family: "M PLUS Rounded 1c";
 }
 
 html.html {
@@ -109,16 +118,25 @@ html {
 
 body {
   font-size: 1.6rem;
-  line-height: 4rem;
   font-family: "Baloo 2", "M  PLUS Rounded 1c", sans-serif;
   color: #AEC7E9;
   background: #05316D;
   height: 100%;
+  letter-spacing: 0.2rem;
 }
 
 a:not(cite > a) {
   color: #AEC7E9;
   text-decoration: none;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.2rem;
+  font-family: "M PLUS Rounded 1c";
 }
 
 /*
@@ -208,6 +226,10 @@ textarea:not([rows]) {
   width: 70%;
 }
 
+.c-fw-500 {
+  font-weight: 500;
+}
+
 .p-header__layer {
   background-image: url(http://localhost:10028/wp-content/uploads/2023/10/top-pc.png);
   background-size: cover;
@@ -225,14 +247,14 @@ textarea:not([rows]) {
   display: flex;
   justify-content: flex-end;
 }
-.p-header__title {
-  width: 50%;
+.p-header > a {
+  width: 48%;
   display: inline-block;
-  padding-right: 10rem;
+  padding-right: 20rem;
 }
 
 .p-skills {
-  background-image: url(http://localhost:10028/wp-content/uploads/2023/10/skill-2.png);
+  background-image: url(http://localhost:10028/wp-content/uploads/2023/10/IMG_0933.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -240,7 +262,22 @@ textarea:not([rows]) {
   width: 100%;
   z-index: -10;
 }
+@media screen and (min-width: 1024px) {
+  .p-skills {
+    background-size: contain;
+    max-height: 70rem;
+  }
+}
 
 .p-main {
   height: 100%;
+}
+
+.p-about {
+  color: #ffffff;
+  margin-top: 5rem;
+}
+.p-about__text {
+  margin-top: 5rem;
+  line-height: 3rem;
 }/*# sourceMappingURL=app.css.map */
