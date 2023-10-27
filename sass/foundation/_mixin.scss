@@ -5,3 +5,26 @@
     background-position: $pos;
     background-repeat: $repeat;
 }
+
+//ブレイクポイント
+$sp: 768px;
+$tab: 769px;
+$pc:1024px;
+
+
+@mixin sp {
+    @media screen and (max-width: ($sp)) {
+      @content;
+    }
+}
+@mixin tab {
+  @media screen and (min-width: ($tab) ) and (max-width:($pc)) {
+    @content;
+  }
+}
+
+@mixin pc {
+    @media screen and (min-width: ($pc)) {
+      @content;
+    }
+}

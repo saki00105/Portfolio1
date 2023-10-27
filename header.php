@@ -17,7 +17,7 @@
         <div class="p-header__layer">
 
             <h1 class="p-header">
-                <a class="p-header__title" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?>
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?>
             </h1>
         </div>
         </header>

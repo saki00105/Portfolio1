@@ -16,7 +16,7 @@ add_theme_support( 'automatic-feed-links' );
 //スタイルシート
 function wpbeg_script() {
     wp_enqueue_style( 'Baloo','https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;800&display=swap' , array() );
-    wp_enqueue_style( 'Rounded+1','https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c' , array() );
+    wp_enqueue_style( 'Rounded+1','https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;800&display=swap' , array() );
     wp_enqueue_style( 'reset', get_theme_file_uri( '/css/reset.css' ), array(), '1.0.0');
     wp_enqueue_style( 'app', get_theme_file_uri( '/css/app.css' ) , array(), '1.0.0');
     wp_enqueue_style( 'style', get_theme_file_uri( '/css/style.css' ) , array(), '1.0.0');
