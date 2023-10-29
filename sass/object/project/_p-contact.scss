@@ -1,0 +1,15 @@
+@use "../../foundation/variable" as var;
+@use "../../foundation/mixin" as m;
+
+.p-contact{
+    margin-top: 10rem;
+    
+
+    &__form{
+        margin-top: 5rem;
+        line-height: 3rem;
+        color: var.$bubble;
+    }
+    
+
+}
