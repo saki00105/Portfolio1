@@ -219,11 +219,39 @@ textarea:not([rows]) {
 
 .l-inner__contents {
   margin: 0 auto;
-  width: 45%;
+}
+@media screen and (max-width: 768px) {
+  .l-inner__contents {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .l-inner__contents {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .l-inner__contents {
+    width: 45%;
+  }
 }
 .l-inner__contact {
   margin: 0 auto;
-  width: 70%;
+}
+@media screen and (max-width: 768px) {
+  .l-inner__contact {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .l-inner__contact {
+    width: 75%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .l-inner__contact {
+    width: 70%;
+  }
 }
 
 .c-fw-500 {
@@ -254,7 +282,7 @@ textarea:not([rows]) {
 }
 
 .p-skills {
-  margin-top: 10rem;
+  margin-top: 12rem;
   position: relative;
   height: 110%;
   width: 100%;
@@ -267,6 +295,17 @@ textarea:not([rows]) {
   .p-skills {
     max-height: 70rem;
   }
+}
+.p-skills__gallery {
+  margin-top: 5rem;
+}
+.p-skills__gallery .wp-element-caption {
+  margin-bottom: -2rem;
+  background-image: none;
+}
+.p-skills__text {
+  margin-top: 3rem;
+  color: #064E93;
 }
 .p-skills__center {
   position: absolute;
@@ -320,6 +359,15 @@ textarea:not([rows]) {
   margin-top: 10rem;
 }
 .p-about__text {
+  margin-top: 5rem;
+  line-height: 3rem;
+}
+
+.p-works {
+  color: #ffffff;
+  margin-top: 10rem;
+}
+.p-works__text {
   margin-top: 5rem;
   line-height: 3rem;
 }/*# sourceMappingURL=app.css.map */
