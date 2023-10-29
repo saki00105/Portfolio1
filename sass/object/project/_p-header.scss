@@ -1,3 +1,6 @@
+@use "../../foundation/variable" as var;
+@use "../../foundation/mixin" as m;
+
 .p-header__layer{
     @include bg-img( url(http://localhost:10028/wp-content/uploads/2023/10/top-pc.png) );
     height: 100vh;
@@ -11,7 +14,17 @@
     letter-spacing: 1.5rem;
     text-align: left;
     display: flex;
-    justify-content: flex-end;
+    
+    @include m.sp{
+        justify-content: center;
+    }
+    @include m.tab{
+        justify-content: center;
+    }
+    @include m.pc{
+        justify-content: flex-end;
+    }
+
     > a{
         width: 48%;
         display: inline-block;
