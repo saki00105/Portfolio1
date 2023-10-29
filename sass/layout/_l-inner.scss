@@ -1,10 +1,30 @@
+@use "../foundation/variable" as var;
+@use "../foundation/mixin" as m;
+
+
 .l-inner{
     &__contents{
         margin:  0 auto;
-        width: 45%;
+        @include m.sp{
+            width: 70%;
+        }
+        @include m.tab{
+            width: 60%;
+        }
+        @include m.pc{
+            width: 45%;
+        }
     }
     &__contact{
         margin:  0 auto;
-        width: 70%;
+        @include m.sp{
+            width: 80%;
+        }
+        @include m.tab{
+            width: 75%;
+        }
+        @include m.pc{
+            width: 70%;
+        }
     }
 }
