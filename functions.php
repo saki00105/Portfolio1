@@ -40,3 +40,5 @@ function custom_print_scripts() {
   wp_enqueue_script('js', get_theme_file_uri('/js/main.js'), array(), filemtime(get_theme_file_path('/js/main.js')), true);
 }
 add_action('wp_enqueue_scripts', 'custom_print_scripts');
+
+
