@@ -4,11 +4,10 @@
 .p-skills{
     margin-top: 12rem;
     position: relative;
-    // @include bg-img( url(http://localhost:10028/wp-content/uploads/2023/10/IMG_0933.png) );
-    // background-size: contain;
     height: 110%;
     width: 100%;
     z-index: -10;
+    color: $bubble;
 
     h2{
         padding-top: 15rem;
@@ -24,11 +23,11 @@
             margin-bottom: -2rem;
             background-image: none;
         }
-
+       
     } 
     &__text{
         margin-top: 3rem;
-        color: var.$bubble;
+        // color: var.$font-blue;
     }
 
     &__center{

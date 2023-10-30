@@ -9,7 +9,7 @@
 
 }
 .p-header{
-    padding-top: 17rem;
+    padding-top: 15%;
     font-size: 4rem;
     letter-spacing: 1.5rem;
     text-align: left;
@@ -23,12 +23,36 @@
     }
     @include m.pc{
         justify-content: flex-end;
+        line-height: 7rem;
+
     }
 
     > a{
-        width: 48%;
+        width: 50%;
         display: inline-block;
         padding-right: 20rem;
+    }
+    &__img{
+        position: absolute;
+        @include m.sp{
+            justify-content: center;
+            top: 35%;
+            left: 35%;
+            width: 30%;
+        }
+        @include m.tab{
+            justify-content: center;
+            top: 35%;
+            left: 35%;
+            width: 30%;
+
+        }
+        @include m.pc{
+            top: 10rem;
+            left: 20%;
+            width: 25%;
+        }
+
     }
 }
 

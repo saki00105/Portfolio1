@@ -14,12 +14,14 @@
     <body <?php body_class(); ?>>
 
         <header class="l-header">
-        <div class="p-header__layer">
+            <div class="p-header__layer">
 
-            <h1 class="p-header">
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?>
-            </h1>
-        </div>
+                <h1 class="p-header">
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?>
+                </h1>
+            </div>
+            <img class="p-header__img" src="http://localhost:10028/wp-content/uploads/2023/10/IMG_0932.png" alt="ペンギンの画像">
+
         </header>
     
     </body>
