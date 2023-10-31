@@ -8,3 +8,4 @@ var element = document.querySelector(selector);
 var title = element.innerHTML;
 var pos = 4;
 element.innerHTML = title.slice(0, pos) + '<br>' + title.slice(pos);
+
