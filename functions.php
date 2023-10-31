@@ -1,6 +1,6 @@
 <?php
 //テーマの追加
-    add_theme_support( 'menus' );
+add_theme_support( 'menus' );
 
 //テーマサポート
 add_theme_support( 'title-tag' );

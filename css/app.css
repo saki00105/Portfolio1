@@ -471,4 +471,8 @@ textarea:not([rows]) {
   width: 100%;
   min-height: 100rem;
   z-index: -10;
+}
+
+.p-footer {
+  margin-top: 20rem;
 }/*# sourceMappingURL=app.css.map */
