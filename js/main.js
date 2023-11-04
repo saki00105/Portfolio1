@@ -3,9 +3,20 @@
 // var pos = 4; // 注2: 何文字目で改行するか？
 // jQuery(selector).html(title.slice(0, pos) + '<br>' + title.slice(pos));
 
-var selector = 'p-header__title';
-var element = document.querySelector(selector);
-var title = element.innerHTML;
-var pos = 4;
-element.innerHTML = title.slice(0, pos) + '<br>' + title.slice(pos);
+// var selector = 'p-header__title';
+// var element = document.querySelector(selector);
+// var title = element.innerHTML;
+// var pos = 4;
+// element.innerHTML = title.slice(0, pos) + '<br>' + title.slice(pos);
 
+
+// import { CirclesToRhombusesSpinner } from 'epic-spinners'
+
+const CirclesToRhombusesSpinner = window['epic-spinners'].CirclesToRhombusesSpinner;
+ 
+new Vue({
+  el: '#app',
+  components: {
+    'circles-to-rhombuses-spinner':CirclesToRhombusesSpinner
+  }
+});

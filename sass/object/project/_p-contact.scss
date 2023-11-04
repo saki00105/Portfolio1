@@ -13,15 +13,15 @@
         color: var.$bubble;
         margin:  0 auto;
         margin-top: 5rem;
-        @include m.sp{
-            width: 80%;
-        }
-        @include m.tab{
-            width: 75%;
-        }
-        @include m.pc{
-            width: 70%;
-        }
+        // @include m.sp{
+        //     width: 80%;
+        // }
+        // @include m.tab{
+        //     width: 75%;
+        // }
+        // @include m.pc{
+        //     width: 70%;
+        // }
         > .smf-form--business{
             background-color: #DFE9F6;
             > .smf-item__col--label{

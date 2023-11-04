@@ -219,6 +219,7 @@ textarea:not([rows]) {
 
 .l-header {
   position: relative;
+  overflow: hidden;
 }
 
 .l-inner__contents {
@@ -258,8 +259,82 @@ textarea:not([rows]) {
   }
 }
 
+.c-line--marker {
+  display: inline-block;
+  position: relative;
+}
+.c-line--marker:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1rem;
+  border-bottom: solid #EEC978 0.7rem;
+  animation: border_anim 0.3s linear forwards;
+  width: 100%;
+}
+
+@keyframes border_anim {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.delay-time {
+  animation-delay: 0.5s;
+}
+
 .c-fw-500 {
   font-weight: 500;
+}
+
+.loader,
+.loader:before,
+.loader:after {
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  animation-fill-mode: both;
+  animation: load7 1.8s infinite ease-in-out;
+}
+
+.loader {
+  color: #ffffff;
+  font-size: 10px;
+  margin: 80px auto;
+  position: relative;
+  text-indent: -9999em;
+  transform: translateZ(0);
+  animation-delay: -0.16s;
+}
+
+.loader:before,
+.loader:after {
+  content: "";
+  position: absolute;
+  top: 0;
+}
+
+.loader:before {
+  left: -3.5em;
+  animation-delay: -0.32s;
+}
+
+.loader:after {
+  left: 3.5em;
+}
+@keyframes load7 {
+  0%, 80%, 100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+.loaded {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .p-header__layer {
@@ -441,21 +516,6 @@ textarea:not([rows]) {
   color: #064E93;
   margin: 0 auto;
   margin-top: 5rem;
-}
-@media screen and (max-width: 768px) {
-  .p-contact .snow-monkey-form {
-    width: 80%;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .p-contact .snow-monkey-form {
-    width: 75%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .p-contact .snow-monkey-form {
-    width: 70%;
-  }
 }
 .p-contact .snow-monkey-form > .smf-form--business {
   background-color: #DFE9F6;
