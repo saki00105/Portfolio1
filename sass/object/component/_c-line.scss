@@ -1,0 +1,44 @@
+@use "../../foundation/variable" as var;
+@use "../../foundation/mixin" as m;
+
+.c-line--marker{
+    // border-bottom: solid var.$yellow 1rem;
+    display: inline-block;
+    position: relative;
+
+    &:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -1rem;
+        border-bottom: solid var.$yellow 0.7rem;
+        animation: border_anim 0.3s linear forwards;
+        // animation-delay: 0.2s;
+        width: 100%;
+        
+
+
+
+    }
+}
+
+@keyframes border_anim {
+	0%{
+		width: 0%;
+        // transform: translateX(0);
+	}
+	100%{
+		width: 100%;
+        // transform: translateX(100%);
+	}
+
+}
+
+.delay-time{  
+    animation-delay: 0.5s;
+}
+
+
+// .linear{
+//     transition-timing-function: liner;
+// }
