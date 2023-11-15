@@ -12,24 +12,20 @@
     h2{
         padding-top: 15rem;
     }
-
     @include m.pc{
         max-height: 70rem;
-
     }
     &__gallery {
         margin-top: 5rem;
         .wp-element-caption{
             margin-bottom: -2rem;
             background-image: none;
-        }
-       
+        }   
     } 
     &__text{
         margin-top: 3rem;
         // color: var.$font-blue;
     }
-
     &__center{
         // position: relative;
         position: absolute;
@@ -37,19 +33,14 @@
         object-fit: cover;
         width: 100%;
         min-height: 70rem;
-
         z-index: -10;
-
         @include m.sp{
             height:70rem;
         }
         @include m.tab{
             height:70rem;
         }
-
     }
-
-    
     &__right{
         position: absolute;
         height: 75%;
@@ -74,7 +65,5 @@
         @include m.tab{
             display: none;
         }
-
     }
-
 }
