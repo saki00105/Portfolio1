@@ -1,22 +1,9 @@
-// var selector = '.p-header-title'; // 注1: タイトルのタグに使われている"CSSセレクタ"
-// var title = jQuery(selector).html();
-// var pos = 4; // 注2: 何文字目で改行するか？
-// jQuery(selector).html(title.slice(0, pos) + '<br>' + title.slice(pos));
+//ローディング画面
+const loading = document.querySelector('.loader');
 
-// var selector = 'p-header__title';
-// var element = document.querySelector(selector);
-// var title = element.innerHTML;
-// var pos = 4;
-// element.innerHTML = title.slice(0, pos) + '<br>' + title.slice(pos);
-
-
-// import { CirclesToRhombusesSpinner } from 'epic-spinners'
-
-const CirclesToRhombusesSpinner = window['epic-spinners'].CirclesToRhombusesSpinner;
- 
-new Vue({
-  el: '#app',
-  components: {
-    'circles-to-rhombuses-spinner':CirclesToRhombusesSpinner
-  }
+window.addEventListener ('load', () => {
+    loading.classList.add('loaded');
 });
+
+
+//スクロールしたら表示
