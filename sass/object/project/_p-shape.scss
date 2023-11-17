@@ -1,0 +1,9 @@
+@use "../../foundation/variable" as var;
+@use "../../foundation/mixin" as m;
+
+.p-shape{
+    position: fixed;
+    top: -5rem;
+    left: -10rem;
+    z-index: -100;
+}
