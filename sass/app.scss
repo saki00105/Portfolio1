@@ -18,6 +18,10 @@
 // @import "layout/_main";
 // @import "layout/_sidebar";
 @import "layout/_l-inner";
+@import "layout/_l-shape";
+@import "layout/_l-loader";
+
+
 
 // ==========================================================================
 // Object
@@ -42,7 +46,7 @@
 // @import "object/project/_comments";
 // @import "object/project/_gallery";
 // @import "object/project/_profile";
-@import "object/project/_p-loading";
+@import "object/project/_p-loader";
 @import "object/project/_p-header";
 @import "object/project/_p-skills";
 @import "object/project/_p-main";
@@ -50,6 +54,8 @@
 @import "object/project/_p-works";
 @import "object/project/_p-contact";
 @import "object/project/_p-footer";
+@import "object/project/_p-shape";
+@import "object/project/_p-nav";
 
 
 
