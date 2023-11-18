@@ -24,13 +24,13 @@
     <header class="l-header">
         <div class="p-header__layer">
 
-            <h1 class="p-header">
+            <h1 class="scroll-in animate__animated animate__fadeInUp p-header">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?>
 
             </h1>
 
         </div>
-        <img class="animate__animated animate__fadeInUp p-header__img" src="http://localhost:10028/wp-content/uploads/2023/10/IMG_0932.png" alt="ペンギンの画像">
+        <img class="scroll-in animate__animated animate__fadeInUp p-header__img" src="http://localhost:10028/wp-content/uploads/2023/10/IMG_0932.png" alt="ペンギンの画像">
     </header>
 
     <!-- 流体シェイプ -->
