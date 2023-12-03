@@ -9,7 +9,7 @@ console.log();
 //スクロールしたら表示
 document.addEventListener('DOMContentLoaded', function() {
 
-  ScrollReveal({ reset: false, distance:'2rem', duration: 2000});
+  ScrollReveal({ reset: false, distance:'2rem', duration: 2000 , viewFactor: 0.1,});
   ScrollReveal().reveal("h2", { 
     delay: 200 , 
     origin:'bottom' 
