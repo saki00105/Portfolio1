@@ -6,9 +6,32 @@ window.addEventListener ('load', () => {
 });
 console.log();
 
+//gsapアニメーション
+
+const penguin = document.querySelector('.p-header__img');
+gsap.to(penguin, {
+  duration: 4.5,
+  ease: "elastic.out(1, 0.3)",
+  y: -250,
+  opacity: 1
+
+});
+
+
+// const header = document.querySelector('.p-header__layer');
+// gsap.to(header, {
+//   duration:3,
+//   ease: "power4.out",
+//   y: 250
+// });
+
+
+
+
+
 //スクロールしたら表示
 document.addEventListener('DOMContentLoaded', function() {
-
+  threshold: 0.1,
   ScrollReveal({ reset: false, distance:'2rem', duration: 2000 , viewFactor: 0.1,});
   ScrollReveal().reveal("h2", { 
     delay: 200 , 
@@ -20,19 +43,25 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   ScrollReveal().reveal(".l-shape ", { 
     delay: 1000 , 
-    origin:'bottom' 
+    origin:'bottom', 
   });
 
   ScrollReveal().reveal(".p-skills__gallery-img , .linkcard ", {
     delay: 1000 ,
     origin:'bottom',
-    interval:200, 
+    interval:200
   });
 
 });
 // ScrollReveal().reveal('.punchline', { delay: 2000 });
 console.log('テスト');
 
+
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.1, //10%
+});
+console.log('テスト2');
 
 //クラス名が「scroll-in」の要素を取得
 // const objects = document.querySelectorAll('.scroll-in');
