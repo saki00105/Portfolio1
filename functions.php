@@ -15,6 +15,8 @@ add_theme_support( 'automatic-feed-links' );
 
 //jsの読み込み
 function custom_print_scripts() {
+  wp_enqueue_script( 'gsap-js',"https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js", array( ), '1.0.0', true );
+
   wp_enqueue_script( 'scroll-js',"https://unpkg.com/scrollreveal", array( ), '1.0.0', true );
   
     // カスタムスクリプト

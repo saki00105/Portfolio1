@@ -31,6 +31,7 @@
 
         </div>
         <img class="p-header__img" src="http://localhost:10028/wp-content/uploads/2023/10/IMG_0932.png" alt="ペンギンの画像">
+        <div class="p-header__curved"></div>
     </header>
 
     <!-- 流体シェイプ -->
