@@ -10,6 +10,7 @@ console.log();
 
 const penguin = document.querySelector('.p-header__img');
 gsap.to(penguin, {
+  // delay: 500,
   duration: 4.5,
   ease: "elastic.out(1, 0.3)",
   y: -250,
@@ -37,14 +38,18 @@ document.addEventListener('DOMContentLoaded', function() {
     delay: 200 , 
     origin:'bottom' 
   });
-  ScrollReveal().reveal("p , .p-footer", { 
-    delay: 600 , 
-    origin:'bottom' 
-  });
+
   ScrollReveal().reveal(".l-shape ", { 
     delay: 1000 , 
     origin:'bottom', 
   });
+
+
+  ScrollReveal().reveal("p , .p-footer", { 
+    delay: 600 , 
+    origin:'bottom' 
+  });
+  
 
   ScrollReveal().reveal(".p-skills__gallery-img , .linkcard ", {
     delay: 1000 ,
@@ -57,11 +62,35 @@ document.addEventListener('DOMContentLoaded', function() {
 console.log('テスト');
 
 
-const sectionObserver = new IntersectionObserver(revealSection, {
-  root: null,
-  threshold: 0.1, //10%
-});
-console.log('テスト2');
+
+const aliceTumbling = [
+  { transform: 'rotate(0) scale(1)' },
+  { transform: 'rotate(360deg) scale(0)' }
+];
+
+const aliceTiming = {
+  duration: 2000,
+  iterations: 1,
+  fill: 'forwards'
+}
+
+const alice1 = document.querySelector("#alice1");
+const alice2 = document.querySelector("#alice2");
+const alice3 = document.querySelector("#alice3");
+
+
+alice1.animate(aliceTumbling, aliceTiming).finished
+  .then(() => alice2.animate(aliceTumbling, aliceTiming).finished)
+  .then(() => alice3.animate(aliceTumbling, aliceTiming).finished)
+  .catch(error => console.error(`Error animating Alices: ${error}`
+));
+
+
+// const sectionObserver = new IntersectionObserver(revealSection, {
+//   root: null,
+//   threshold: 0.1, //10%
+// });
+// console.log('テスト2');
 
 //クラス名が「scroll-in」の要素を取得
 // const objects = document.querySelectorAll('.scroll-in');
