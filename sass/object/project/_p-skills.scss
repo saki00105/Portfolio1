@@ -34,6 +34,7 @@
         width: 100%;
         min-height: 70rem;
         z-index: -10;
+        opacity: 0;
         @include m.sp{
             height:70rem;
         }
@@ -47,6 +48,8 @@
         top: 40%;
         right: 0;
         z-index: -50;
+        opacity: 0;
+
         // @include m.sp{
         //     display: none;
         // }
@@ -59,6 +62,8 @@
         height: 100%;
         top: 10%;
         z-index: -50;
+        opacity: 0;
+
         @include m.sp{
             display: none;
         }

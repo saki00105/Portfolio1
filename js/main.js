@@ -10,7 +10,6 @@ console.log();
 
 const penguin = document.querySelector('.p-header__img');
 gsap.to(penguin, {
-  // delay: 500,
   duration: 4.5,
   ease: "elastic.out(1, 0.3)",
   y: -250,
@@ -18,13 +17,15 @@ gsap.to(penguin, {
 
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  ScrollReveal({ reset: false, distance:'2rem', duration: 2000 , viewFactor: 0.01 , threshold: 0.01});
+  
+  ScrollReveal().reveal("h1", { 
+    delay: 200 , 
+    origin:'bottom' 
+  });
+});
 
-// const header = document.querySelector('.p-header__layer');
-// gsap.to(header, {
-//   duration:3,
-//   ease: "power4.out",
-//   y: 250
-// });
 
 
 
@@ -32,27 +33,25 @@ gsap.to(penguin, {
 
 //スクロールしたら表示
 document.addEventListener('DOMContentLoaded', function() {
-  threshold: 0.1,
-  ScrollReveal({ reset: false, distance:'2rem', duration: 2000 , viewFactor: 0.1,});
+  ScrollReveal({ reset: false, distance:'2rem', duration: 2000 , viewFactor: 0.01 , threshold: 0.01});
+  
   ScrollReveal().reveal("h2", { 
-    delay: 200 , 
+    delay: 100 , 
     origin:'bottom' 
   });
 
-  ScrollReveal().reveal(".l-shape ", { 
-    delay: 1000 , 
-    origin:'bottom', 
-  });
-
-
-  ScrollReveal().reveal("p , .p-footer", { 
+  ScrollReveal().reveal(".c-fw-500", { 
     delay: 600 , 
     origin:'bottom' 
   });
   
+  ScrollReveal().reveal(".l-shape , .snow-monkey-form ", { 
+    delay: 1000 , 
+    origin:'bottom', 
+  });
 
   ScrollReveal().reveal(".p-skills__gallery-img , .linkcard ", {
-    delay: 1000 ,
+    delay: 600 ,
     origin:'bottom',
     interval:200
   });
@@ -60,6 +59,55 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 // ScrollReveal().reveal('.punchline', { delay: 2000 });
 console.log('テスト');
+
+
+//氷の表示
+const frozenCenter = document.querySelector('.p-skills__center');
+const frozenSide = document.querySelector('.p-skills__left , .p-skills__right');
+
+
+// アニメーションの設定
+const frozenCenterAnimation = gsap.to( frozenCenter, {
+  duration: 4.5,
+  ease: "elastic.out(1, 0.3)",
+  y: -250,
+  opacity: 1,
+  paused: true  // 最初はアニメーションを一時停止
+});
+const frozenSideAnimation = gsap.to( frozenSide, {
+  duration: 4.5,
+  ease: "elastic.out(1, 0.3)",
+  y: -250,
+  opacity: 1,
+  paused: true,  // 最初はアニメーションを一時停止
+  delay: 0.5 
+});
+
+// Intersection Observerの設定
+const options = {
+  threshold: 0.5  // 50%以上が表示されたらコールバックを実行
+};
+
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      // 要素が表示されたらアニメーションを再生
+      if (entry.target.classList.contains('p-skills__center')) {
+        frozenCenterAnimation.play();
+      } else if (entry.target.classList.contains('p-skills__left , p-skills__right')) {
+        frozenSideAnimation.play();
+      }
+
+      observer.unobserve(entry.target); // 一度だけ実行するためObserverを解除
+    }
+  });
+}, options);
+
+// 監視対象の要素をObserverに追加
+observer.observe(frozenCenter);
+observer.observe(frozenSide);
+
+
 
 
 
