@@ -446,7 +446,7 @@ textarea:not([rows]) {
 }
 .p-skills__center {
   position: absolute;
-  top: 0;
+  top: 250px;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;

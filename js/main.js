@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-
+//shape
 
 
 
@@ -40,15 +40,17 @@ document.addEventListener('DOMContentLoaded', function() {
     origin:'bottom' 
   });
 
+  
+
   ScrollReveal().reveal(".c-fw-500", { 
     delay: 600 , 
     origin:'bottom' 
   });
   
-  ScrollReveal().reveal(".l-shape , .snow-monkey-form ", { 
-    delay: 1000 , 
-    origin:'bottom', 
-  });
+  // ScrollReveal().reveal(".l-shape , .snow-monkey-form ", { 
+  //   delay: 1000 , 
+  //   origin:'bottom', 
+  // });
 
   ScrollReveal().reveal(".p-skills__gallery-img , .linkcard ", {
     delay: 600 ,
@@ -57,6 +59,28 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  ScrollReveal({ reset: false, distance:'2rem', duration: 2000, viewFactor: 0.01, threshold: 0.01 });
+
+  function revealOnScroll() {
+      var scrollPosition = window.scrollY;
+      var viewportHeight = window.innerHeight;
+
+      if (scrollPosition > viewportHeight) {
+          ScrollReveal().reveal(".l-shape , .snow-monkey-form ", { delay: 1000, origin: 'bottom' });
+      }
+
+      // 一度だけ実行するためにイベントリスナーを削除
+      window.removeEventListener('scroll', revealOnScroll);
+  }
+
+  // スクロール時にrevealOnScrollを呼び出す
+  window.addEventListener('scroll', revealOnScroll);
+});
+
+
 // ScrollReveal().reveal('.punchline', { delay: 2000 });
 console.log('テスト');
 
@@ -107,6 +131,9 @@ const observer = new IntersectionObserver((entries, observer) => {
 observer.observe(frozenCenter);
 observer.observe(frozenSide);
 
+
+
+//
 
 
 
