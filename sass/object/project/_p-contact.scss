@@ -35,19 +35,18 @@
         position: absolute;
         object-fit: cover;
         width: 100%;
+        top: 1rem;
         z-index: -10;
+        opacity: 0;
 
         @include m.sp{
             min-height: 120rem;
-            top: -17rem;
         }
         @include m.tab{
             min-height: 100rem;
-            top: -17rem;
         }
         @include m.pc{
             min-height: 100rem;
-            top: -17rem;
         }
     }
 }
