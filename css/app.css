@@ -225,12 +225,12 @@ textarea:not([rows]) {
 .l-inner__contents {
   margin: 0 auto;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 639px) {
   .l-inner__contents {
     width: 70%;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 640px) and (max-width: 1024px) {
   .l-inner__contents {
     width: 60%;
   }
@@ -243,12 +243,12 @@ textarea:not([rows]) {
 .l-inner__contact {
   margin: 0 auto;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 639px) {
   .l-inner__contact {
     width: 80%;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 640px) and (max-width: 1024px) {
   .l-inner__contact {
     width: 75%;
   }
@@ -331,7 +331,7 @@ textarea:not([rows]) {
   }
   to {
     opacity: 0;
-    transform: translateY(500px);
+    transform: translateY(200px);
   }
 }
 
@@ -403,12 +403,12 @@ textarea:not([rows]) {
   text-align: left;
   display: flex;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 639px) {
   .p-header {
     justify-content: center;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 640px) and (max-width: 1024px) {
   .p-header {
     justify-content: center;
   }
@@ -423,7 +423,7 @@ textarea:not([rows]) {
   width: 50%;
   display: inline-block;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 639px) {
   .p-header > a {
     margin-top: 2rem;
   }
@@ -437,7 +437,7 @@ textarea:not([rows]) {
   position: absolute;
   opacity: 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 639px) {
   .p-header__img {
     justify-content: center;
     top: 37rem;
@@ -445,7 +445,7 @@ textarea:not([rows]) {
     width: 40%;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 640px) and (max-width: 1024px) {
   .p-header__img {
     justify-content: center;
     top: 35rem;
@@ -495,13 +495,13 @@ textarea:not([rows]) {
   z-index: -10;
   opacity: 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 639px) {
   .p-skills__center {
     min-height: 110rem;
     top: 200px;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 640px) and (max-width: 1024px) {
   .p-skills__center {
     min-height: 70rem;
     top: 250px;
@@ -519,21 +519,19 @@ textarea:not([rows]) {
   top: 40%;
   right: 0;
   z-index: -50;
-  opacity: 0;
 }
 .p-skills__left {
   position: absolute;
   height: 100%;
   top: 10%;
   z-index: -50;
-  opacity: 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 639px) {
   .p-skills__left {
     display: none;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 640px) and (max-width: 1024px) {
   .p-skills__left {
     display: none;
   }
@@ -560,7 +558,7 @@ textarea:not([rows]) {
   margin-top: 5rem;
   line-height: 3rem;
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 640px) and (max-width: 1024px) {
   .p-works__blogcard > .wp-block-group__inner-container {
     display: flex;
     justify-content: space-between;
@@ -597,24 +595,23 @@ textarea:not([rows]) {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+  top: 1rem;
   z-index: -10;
+  opacity: 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 639px) {
   .p-contact__center {
     min-height: 120rem;
-    top: -17rem;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 640px) and (max-width: 1024px) {
   .p-contact__center {
     min-height: 100rem;
-    top: -17rem;
   }
 }
 @media screen and (min-width: 1024px) {
   .p-contact__center {
     min-height: 100rem;
-    top: -17rem;
   }
 }
 
@@ -626,14 +623,14 @@ textarea:not([rows]) {
   position: fixed;
   z-index: -100;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 639px) {
   .p-shape__left {
     top: -5rem;
     left: -12rem;
     height: 35rem;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 640px) and (max-width: 1024px) {
   .p-shape__left {
     top: -5rem;
     left: -15rem;
@@ -651,14 +648,14 @@ textarea:not([rows]) {
   position: fixed;
   z-index: -100;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 639px) {
   .p-shape__right {
     top: 30rem;
     right: -5rem;
     height: 25rem;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 640px) and (max-width: 1024px) {
   .p-shape__right {
     top: 27rem;
     right: -5rem;
@@ -675,7 +672,7 @@ textarea:not([rows]) {
 
 .p-nav {
   position: fixed;
-  top: 5rem;
+  top: 1.5rem;
   right: 1rem;
   z-index: 100;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
