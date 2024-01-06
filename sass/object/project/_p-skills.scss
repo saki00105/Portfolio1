@@ -29,17 +29,21 @@
     &__center{
         // position: relative;
         position: absolute;
-        top: 250px;
         object-fit: cover;
         width: 100%;
-        min-height: 70rem;
         z-index: -10;
         opacity: 0;
         @include m.sp{
-            height:70rem;
+            min-height: 110rem;
+            top: 200px;
         }
         @include m.tab{
-            height:70rem;
+            min-height: 70rem;
+            top: 250px;
+        }
+        @include m.pc{
+            min-height: 70rem;
+            top: 250px;
         }
     }
     &__right{

@@ -1,0 +1,36 @@
+.c-appear{
+    /*はじめは非表示*/
+    transform: translateY(100%);
+    opacity: 0;
+
+    /*　上に上がる動き　*/
+    &.UpMove{
+        animation: UpAnime 1s forwards;
+    }
+    @keyframes UpAnime{
+        from {
+        opacity: 0;
+        transform: translateY(500px);
+        }
+        to {
+        opacity: 1;
+        transform: translateY(0);
+        }
+    }
+    /*　下に下がる動き　*/
+
+    &.DownMove{
+        animation: DownAnime 1s forwards;
+    }
+    @keyframes DownAnime{
+        from {
+        opacity: 1;
+        transform: translateY(0);
+        }
+        to {
+        opacity: 0;
+        transform: translateY(500px);
+        }
+    }
+  
+}

@@ -4,17 +4,51 @@
 .p-shape{
     &__left{
         position: fixed;
-        top: -5rem;
-        left: -13rem;
         z-index: -100;
-        height: 50rem;
+        
+        @include m.sp{
+            top: -5rem;
+            left: -12rem;
+            height: 35rem;
+        }
+        @include m.tab{
+            top: -5rem;
+            left: -15rem;
+            height: 45rem;       
+        }
+        @include m.pc{
+            top: -5rem;
+            left: -13rem;
+            height: 50rem;
+
+        }
+
     }
     &__right{
         position: fixed;
-        top: 27rem;
-        right:-5rem;
+        
         z-index: -100;
-        height: 35rem;
+
+        @include m.sp{
+            top: 30rem;
+            right:-5rem;
+            height: 25rem;
+            // height: 40%;
+
+        }
+        @include m.tab{
+            top: 27rem;
+            right:-5rem;
+            height: 30rem;
+            // height: 40%;
+        }
+        @include m.pc{
+            top: 27rem;
+            right:-5rem;
+            height: 35rem;
+            // height: 50%;
+
+        }
 
     }
 

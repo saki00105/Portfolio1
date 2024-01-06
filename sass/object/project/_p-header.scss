@@ -27,22 +27,30 @@
     > a{
         width: 50%;
         display: inline-block;
-        padding-right: 20rem;
+        @include m.sp{
+            margin-top: 2rem;
+        }
+        @include m.tab{
+            // margin-top: 2rem;
+        }
+        @include m.pc{
+            padding-right: 20rem;
+        }
     }
     &__img{
         position: absolute;
         opacity: 0;
         @include m.sp{
             justify-content: center;
-            top: 35%;
-            left: 35%;
-            width: 30%;
+            top: 37rem;
+            left: 30%;
+            width: 40%;
         }
         @include m.tab{
             justify-content: center;
-            top: 35%;
+            top: 35rem;
             left: 35%;
-            width: 30%;
+            width: 35%;
         }
         @include m.pc{
             top: 25rem;
