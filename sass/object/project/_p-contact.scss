@@ -33,18 +33,21 @@
     &__center{
         // position: relative;
         position: absolute;
-        top: -17rem;
         object-fit: cover;
         width: 100%;
-        min-height: 100rem;
         z-index: -10;
-        // @include m.sp{
-        //     height:70rem;
-        // }
-        // @include m.tab{
-        //     height:70rem;
-        // }
-        // @include m.pc{
-        // }
+
+        @include m.sp{
+            min-height: 120rem;
+            top: -17rem;
+        }
+        @include m.tab{
+            min-height: 100rem;
+            top: -17rem;
+        }
+        @include m.pc{
+            min-height: 100rem;
+            top: -17rem;
+        }
     }
 }

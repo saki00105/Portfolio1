@@ -7,7 +7,7 @@
 
         
         <!-- 流体シェイプ -->
-        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="l-shape p-shape__left">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="l-shape p-shape__left c-appear DownMove">
             <path fill="#064E93" d="M46.3,-61.2C62.2,-52.3,78.6,-41.6,84.9,-26.6C91.2,-11.5,87.4,7.8,80,24.6C72.7,41.5,61.8,55.8,47.9,65.8C33.9,75.8,17,81.5,-0.4,82.1C-17.8,82.7,-35.7,78.2,-47.8,67.6C-59.9,57,-66.3,40.3,-71,23.6C-75.6,7,-78.5,-9.7,-75.4,-26.2C-72.4,-42.7,-63.6,-59,-50,-68.7C-36.4,-78.4,-18.2,-81.5,-1.5,-79.5C15.2,-77.4,30.5,-70.2,46.3,-61.2Z" transform="translate(100 100)">
                 <animate attributeType="XML" 
                     attributeName="d" 
@@ -23,7 +23,7 @@
             </path>
         </svg>
 
-        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="l-shape p-shape__right">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="l-shape p-shape__right c-appear DownMove">
             <path fill="#064E93" d="M50.6,-77.7C65.4,-69.2,77.2,-54.9,80.7,-39.2C84.2,-23.5,79.3,-6.4,76.1,10.4C72.8,27.3,71.3,43.9,63.4,57.5C55.6,71.2,41.4,81.9,25.8,85.4C10.2,88.9,-6.8,85.1,-22.7,79.4C-38.5,73.8,-53.1,66.2,-63.8,54.8C-74.6,43.4,-81.4,28,-85,11.4C-88.7,-5.2,-89.1,-23,-81.9,-36.8C-74.7,-50.6,-59.9,-60.4,-45,-68.9C-30,-77.3,-15,-84.6,1.4,-86.8C17.9,-89,35.7,-86.2,50.6,-77.7Z" transform="translate(100 100)">
                 <animate attributeType="XML" 
                     attributeName="d" 

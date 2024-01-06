@@ -14,7 +14,6 @@ gsap.to(penguin, {
   ease: "elastic.out(1, 0.3)",
   y: -250,
   opacity: 1
-
 });
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -28,6 +27,47 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 //shape
+function PageTopAnime() {
+  var scroll = window.scrollY || document.documentElement.scrollTop;
+  var pageTop = document.querySelectorAll('.c-appear');
+
+  pageTop.forEach(function(pageTop){
+    if (scroll >= 500) {
+      // 上から200pxスクロールしたら
+      pageTop.classList.remove('DownMove');
+      pageTop.classList.add('UpMove');
+    } else {
+      if (pageTop.classList.contains('UpMove')) {
+        // すでにUpMoveというクラス名がついていたら
+        pageTop.classList.remove('UpMove');
+        pageTop.classList.add('DownMove');
+      }
+    }
+  });
+
+ 
+}
+
+// 画面をスクロールしたら動かす
+window.addEventListener('scroll', function () {
+  PageTopAnime();
+});
+
+// // ページが読み込まれたらすぐに動かす
+// window.addEventListener('load', function () {
+//   PageTopAnime();
+// });
+
+// .page-topをクリックした際の設定
+// document.querySelector('.page-top a').addEventListener('click', function (event) {
+//   event.preventDefault(); // リンク自体の無効化
+
+  // ページトップまでスクロール
+  // window.scrollTo({
+  //   top: 0,
+  //   behavior: 'smooth' // ページトップスクロールのアニメーション
+  // });
+// });
 
 
 
@@ -61,24 +101,24 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-document.addEventListener('DOMContentLoaded', function() {
-  ScrollReveal({ reset: false, distance:'2rem', duration: 2000, viewFactor: 0.01, threshold: 0.01 });
+// document.addEventListener('DOMContentLoaded', function() {
+//   ScrollReveal({ reset: false, distance:'2rem', duration: 2000, viewFactor: 0.01, threshold: 0.01 });
 
-  function revealOnScroll() {
-      var scrollPosition = window.scrollY;
-      var viewportHeight = window.innerHeight;
+//   function revealOnScroll() {
+//       var scrollPosition = window.scrollY;
+//       var viewportHeight = window.innerHeight;
 
-      if (scrollPosition > viewportHeight) {
-          ScrollReveal().reveal(".l-shape , .snow-monkey-form ", { delay: 1000, origin: 'bottom' });
-      }
+//       if (scrollPosition > viewportHeight) {
+//           ScrollReveal().reveal(".l-shape , .snow-monkey-form ", { delay: 1000, origin: 'bottom' });
+//       }
 
-      // 一度だけ実行するためにイベントリスナーを削除
-      window.removeEventListener('scroll', revealOnScroll);
-  }
+//       // 一度だけ実行するためにイベントリスナーを削除
+//       window.removeEventListener('scroll', revealOnScroll);
+//   }
 
-  // スクロール時にrevealOnScrollを呼び出す
-  window.addEventListener('scroll', revealOnScroll);
-});
+//   // スクロール時にrevealOnScrollを呼び出す
+//   window.addEventListener('scroll', revealOnScroll);
+// });
 
 
 // ScrollReveal().reveal('.punchline', { delay: 2000 });
@@ -138,27 +178,27 @@ observer.observe(frozenSide);
 
 
 
-const aliceTumbling = [
-  { transform: 'rotate(0) scale(1)' },
-  { transform: 'rotate(360deg) scale(0)' }
-];
+// const aliceTumbling = [
+//   { transform: 'rotate(0) scale(1)' },
+//   { transform: 'rotate(360deg) scale(0)' }
+// ];
 
-const aliceTiming = {
-  duration: 2000,
-  iterations: 1,
-  fill: 'forwards'
-}
+// const aliceTiming = {
+//   duration: 2000,
+//   iterations: 1,
+//   fill: 'forwards'
+// }
 
-const alice1 = document.querySelector("#alice1");
-const alice2 = document.querySelector("#alice2");
-const alice3 = document.querySelector("#alice3");
+// const alice1 = document.querySelector("#alice1");
+// const alice2 = document.querySelector("#alice2");
+// const alice3 = document.querySelector("#alice3");
 
 
-alice1.animate(aliceTumbling, aliceTiming).finished
-  .then(() => alice2.animate(aliceTumbling, aliceTiming).finished)
-  .then(() => alice3.animate(aliceTumbling, aliceTiming).finished)
-  .catch(error => console.error(`Error animating Alices: ${error}`
-));
+// alice1.animate(aliceTumbling, aliceTiming).finished
+//   .then(() => alice2.animate(aliceTumbling, aliceTiming).finished)
+//   .then(() => alice3.animate(aliceTumbling, aliceTiming).finished)
+//   .catch(error => console.error(`Error animating Alices: ${error}`
+// ));
 
 
 // const sectionObserver = new IntersectionObserver(revealSection, {
