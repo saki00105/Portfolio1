@@ -103,6 +103,10 @@ h2 {
   font-size: 3rem;
 }
 
+h3 {
+  font-family: "M PLUS Rounded 1c";
+}
+
 p {
   font-size: 1.2rem;
   font-family: "M PLUS Rounded 1c";
@@ -132,6 +136,10 @@ a:not(cite > a) {
 
 h2 {
   font-size: 3rem;
+}
+
+h3 {
+  font-family: "M PLUS Rounded 1c";
 }
 
 p {
@@ -493,7 +501,7 @@ textarea:not([rows]) {
 .p-skills__text {
   margin-top: 3rem;
 }
-.p-skills__center {
+.p-skills__center, .p-single__center {
   position: absolute;
   -o-object-fit: cover;
      object-fit: cover;
@@ -502,19 +510,19 @@ textarea:not([rows]) {
   opacity: 0;
 }
 @media screen and (max-width: 639px) {
-  .p-skills__center {
+  .p-skills__center, .p-single__center {
     min-height: 110rem;
     top: 200px;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 1024px) {
-  .p-skills__center {
+  .p-skills__center, .p-single__center {
     min-height: 70rem;
     top: 250px;
   }
 }
 @media screen and (min-width: 1024px) {
-  .p-skills__center {
+  .p-skills__center, .p-single__center {
     min-height: 70rem;
     top: 250px;
   }
@@ -687,6 +695,76 @@ textarea:not([rows]) {
   top: 3rem;
 }
 
-.p-single {
-  margin-top: 20rem;
+@media screen and (max-width: 639px) {
+  .p-single {
+    margin-top: 10rem;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+  .p-single {
+    margin-top: 13rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-single {
+    margin-top: 15rem;
+  }
+}
+.p-single__text {
+  color: #ffffff;
+  line-height: 3rem;
+}
+@media screen and (max-width: 639px) {
+  .p-single__text {
+    margin-top: 20rem;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+  .p-single__text {
+    margin-top: 25rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-single__text {
+    margin-top: 22rem;
+  }
+}
+.p-single__text h3 {
+  margin-top: 2rem;
+}
+@media screen and (max-width: 639px) {
+  .p-single__image > figure > img {
+    max-width: 70%;
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+  .p-single__image > figure > img {
+    max-width: 60%;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-single__image > figure > img {
+    max-width: 55%;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+  }
+}
+@media screen and (max-width: 639px) {
+  .p-single__center {
+    min-height: 60rem;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+  .p-single__center {
+    min-height: 65rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-single__center {
+    min-height: 70rem;
+  }
 }/*# sourceMappingURL=app.css.map */

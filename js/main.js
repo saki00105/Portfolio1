@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
     delay: 200 , 
     origin:'bottom' 
   });
-  ScrollReveal().reveal("h2", { 
+  ScrollReveal().reveal("h2, .p-single__image", { 
     delay: 100 , 
     origin:'bottom' 
   });

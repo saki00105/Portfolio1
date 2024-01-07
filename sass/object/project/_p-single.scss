@@ -1,7 +1,66 @@
 @use "../../foundation/variable" as var;
 @use "../../foundation/mixin" as m;
+// @use "../project/p-skills";
 
 .p-single{
-    margin-top: 20rem;
+    @include m.sp{
+        margin-top: 10rem;
+    }
+    @include m.tab{
+        margin-top: 13rem;
+    }
+    @include m.pc{
+        margin-top: 15rem;
+    }
+    &__text{
+        color: var.$white;
+        line-height: 3rem;
+        @include m.sp{
+            margin-top: 20rem;
+        }
+        @include m.tab{
+            margin-top: 25rem;
+        }
+        @include m.pc{
+            margin-top: 22rem;
+        }
+        h3{
+            margin-top: 2rem;    
+        }
+    }
+    &__image > figure > img{
+        @include m.sp{
+            max-width: 70%;
 
+            margin: 0 auto;
+            margin-top: 1rem;
+        }
+        @include m.tab{
+            max-width: 60%;
+            margin: 0 auto;
+            margin-top: 1.5rem;    
+        }
+        @include m.pc{
+            max-width: 55%;
+            // min-width: 55%;
+
+            margin: 0 auto;
+            margin-top: 1.5rem;
+
+        }
+    }
+    &__center{
+        @extend .p-skills__center; // p-skills__centerのスタイルを再利用
+    // p-single__centerの追加スタイル
+        @include m.sp{
+            min-height: 60rem;
+        }
+        @include m.tab{
+            min-height: 65rem;
+        }
+        @include m.pc{
+            min-height: 70rem;
+        }
+    }
+    
 }
