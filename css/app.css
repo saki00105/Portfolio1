@@ -564,6 +564,11 @@ textarea:not([rows]) {
   line-height: 3rem;
 }
 
+.c-hover, .p-works__card > .smb-panels__item:hover {
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+  transform: translateY(-0.5rem);
+}
+
 .p-works {
   color: #ffffff;
   margin-top: 25rem;
@@ -572,19 +577,11 @@ textarea:not([rows]) {
   margin-top: 5rem;
   line-height: 3rem;
 }
-@media screen and (min-width: 640px) and (max-width: 1024px) {
-  .p-works__blogcard > .wp-block-group__inner-container {
-    display: flex;
-    justify-content: space-between;
-  }
+.p-works__card > .smb-panels__item {
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease 0s;
 }
-@media screen and (min-width: 1024px) {
-  .p-works__blogcard > .wp-block-group__inner-container {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
 .p-contact {
   margin-top: 30rem;
   position: relative;

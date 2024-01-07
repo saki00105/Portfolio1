@@ -1,5 +1,6 @@
 @use "../../foundation/variable" as var;
 @use "../../foundation/mixin" as m;
+@import "../component/c-hover";
 
 .p-works{
     color: var.$white;
@@ -9,18 +10,26 @@
         margin-top: 5rem;
         line-height: 3rem;
     }
-    &__blogcard{
-        > .wp-block-group__inner-container{
-                // @include m.sp{
-            // }
-            @include m.tab{
-                display:flex;
-                justify-content: space-between;
-            }
-            @include m.pc{
-                display:flex;
-                justify-content: space-between;
-            }
-        }   
+    &__card > .smb-panels__item{
+        border-radius: 1rem;
+        box-shadow: 0.5rem 0.5rem 0.5rem rgba(0,0,0,0.5);
+        transition: all 0.3s ease 0s;
+        &:hover{
+            @extend .c-hover;
+        }
     }
+    // &__blogcard{
+    //     > .wp-block-group__inner-container{
+    //             // @include m.sp{
+    //         // }
+    //         @include m.tab{
+    //             display:flex;
+    //             justify-content: space-between;
+    //         }
+    //         @include m.pc{
+    //             display:flex;
+    //             justify-content: space-between;
+    //         }
+    //     }   
+    // }
 }

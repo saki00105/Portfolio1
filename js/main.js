@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
     delay: 600 , 
     origin:'bottom' 
   });
-  ScrollReveal().reveal(".p-skills__left, .p-skills__right, .p-skills__gallery-img , .linkcard ", {
+  ScrollReveal().reveal(".p-skills__left, .p-skills__right, .p-skills__gallery-img , .p-works__card ", {
     delay: 600 ,
     origin:'bottom',
     interval:200
