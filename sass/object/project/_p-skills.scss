@@ -33,6 +33,7 @@
         width: 100%;
         z-index: -10;
         opacity: 0;
+
         @include m.sp{
             min-height: 110rem;
             top: 200px;
