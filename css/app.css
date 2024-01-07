@@ -420,17 +420,23 @@ textarea:not([rows]) {
   }
 }
 .p-header > a {
-  width: 50%;
   display: inline-block;
 }
 @media screen and (max-width: 639px) {
   .p-header > a {
     margin-top: 2rem;
+    width: 75%;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+  .p-header > a {
+    width: 75%;
   }
 }
 @media screen and (min-width: 1024px) {
   .p-header > a {
     padding-right: 20rem;
+    width: 50%;
   }
 }
 .p-header__img {

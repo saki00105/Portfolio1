@@ -42,6 +42,14 @@ add_action( 'wp_enqueue_scripts', 'wpbeg_script' );
 
 
 
+
+//ヘッダーの非表示
+if (is_single()) {
+  remove_action('your_header_action_hook', 'your_header_function_name');
+}
+
+
+
 // function custom_print_scripts() {
 //   // カスタムスクリプト
 //   wp_enqueue_script('js', get_theme_file_uri('/js/main.js'), array(), filemtime(get_theme_file_path('/js/main.js')), true);
