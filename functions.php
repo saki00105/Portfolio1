@@ -44,9 +44,22 @@ add_action( 'wp_enqueue_scripts', 'wpbeg_script' );
 
 
 //ヘッダーの非表示
-if (is_single()) {
-  remove_action('your_header_action_hook', 'your_header_function_name');
+function my_custom_function() {
+  if (is_single()) {
+      ?>
+      <script>
+          document.addEventListener('DOMContentLoaded', function () {
+              var Header = document.querySelector('.l-header');
+              if (Header) {
+                  Header.style.display = 'none';
+              }
+          });
+      </script>
+      <?php
+  }
 }
+
+add_action('wp_head', 'my_custom_function');
 
 
 
