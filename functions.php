@@ -42,6 +42,27 @@ add_action( 'wp_enqueue_scripts', 'wpbeg_script' );
 
 
 
+
+//ヘッダーの非表示
+function my_custom_function() {
+  if (is_single()) {
+      ?>
+      <script>
+          document.addEventListener('DOMContentLoaded', function () {
+              var Header = document.querySelector('.l-header');
+              if (Header) {
+                  Header.style.display = 'none';
+              }
+          });
+      </script>
+      <?php
+  }
+}
+
+add_action('wp_head', 'my_custom_function');
+
+
+
 // function custom_print_scripts() {
 //   // カスタムスクリプト
 //   wp_enqueue_script('js', get_theme_file_uri('/js/main.js'), array(), filemtime(get_theme_file_path('/js/main.js')), true);

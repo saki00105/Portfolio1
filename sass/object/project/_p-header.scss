@@ -25,16 +25,18 @@
         line-height: 7rem;
     }
     > a{
-        width: 50%;
         display: inline-block;
         @include m.sp{
             margin-top: 2rem;
+            width: 75%;
         }
         @include m.tab{
             // margin-top: 2rem;
+            width: 75%;
         }
         @include m.pc{
             padding-right: 20rem;
+            width: 50%;
         }
     }
     &__img{
