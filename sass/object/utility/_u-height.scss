@@ -1,0 +1,10 @@
+
+
+.u-height{
+    @media screen and (min-width: (600px) ) and (max-width:(640px)) {
+        // @content;
+        min-height: 70rem;
+        top: 250px;
+    }
+        
+}
