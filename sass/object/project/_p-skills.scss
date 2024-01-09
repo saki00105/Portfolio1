@@ -50,9 +50,19 @@
     &__right{
         position: absolute;
         height: 75%;
-        top: 40%;
         right: 0;
         z-index: -50;
+        transition: all 0.5s ease 0s;
+
+        @include m.sp{
+            display: none;
+        }
+        @include m.tab{
+            top: 40%;
+        }
+        @include m.pc{
+            top: 40%;
+        }
         // opacity: 0;
 
         // @include m.sp{
