@@ -41,6 +41,16 @@ function wpbeg_script() {
 add_action( 'wp_enqueue_scripts', 'wpbeg_script' );
 
 
+//ナビゲーション
+function theme_setup(){
+  register_nav_menus( 
+    array(
+      'hamburger_nav' => 'ハンバーガーナビ',
+      'footer_nav' => 'フッターナビ',
+    )
+  );
+}
+add_action( 'after_setup_theme', 'theme_setup');
 
 
 //ヘッダーの非表示
@@ -60,6 +70,8 @@ function my_custom_function() {
 }
 
 add_action('wp_head', 'my_custom_function');
+
+
 
 
 

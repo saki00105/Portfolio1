@@ -1,18 +1,45 @@
-//ローディング画面
+// //ローディング画面
+// const loading = document.querySelector('.l-loader');
+
+// window.addEventListener ('load', () => {
+//     loading.classList.add('l-loaded','p-loaded');
+// });
+// console.log();
+
+// //gsapアニメーション
+// const penguin = document.querySelector('.p-header__img');
+// gsap.to(penguin, {
+//   duration: 4.5,
+//   ease: "elastic.out(1, 0.3)",
+//   y: -250,
+//   opacity: 1
+// });
+
+// ローディング画面
 const loading = document.querySelector('.l-loader');
+// ウィンドウのロードが完了した時のイベントリスナー
+window.addEventListener('load', () => {
+  // ローディング画面のクラスを追加
+  loading.classList.add('l-loaded', 'p-loaded');
 
-window.addEventListener ('load', () => {
-    loading.classList.add('l-loaded','p-loaded');
-});
-console.log();
-
-//gsapアニメーション
+// gsapアニメーション対象
 const penguin = document.querySelector('.p-header__img');
-gsap.to(penguin, {
-  duration: 4.5,
-  ease: "elastic.out(1, 0.3)",
-  y: -250,
-  opacity: 1
+
+// gsapアニメーションを再生する関数
+function playAnimation() {
+  // gsapアニメーション
+  gsap.to(penguin, {
+    duration: 4.5,
+    ease: "elastic.out(1, 0.3)",
+    y: -250,
+    opacity: 1
+  });
+}
+
+  // 一定時間後にgsapのアニメーションを再生
+  setTimeout(() => {
+    playAnimation();
+  }); 
 });
 
 
@@ -64,13 +91,13 @@ window.addEventListener('scroll', function () {
 
 //スクロールしたら表示
 document.addEventListener('DOMContentLoaded', function() {
-  ScrollReveal({ reset: false, distance:'2rem', duration: 2000 , viewFactor: 0.01 , threshold: 0.01});
+  ScrollReveal({ reset: false, distance:'2rem', duration: 2000 , viewFactor: 0 , threshold: 0.01});
   
-  ScrollReveal().reveal("h1", { 
-    delay: 200 , 
-    origin:'bottom' 
-  });
-  ScrollReveal().reveal("h2, .p-single__image", { 
+  // ScrollReveal().reveal("h1", { 
+  //   delay: 200 , 
+  //   origin:'bottom' 
+  // });
+  ScrollReveal().reveal("h1 , h2, .p-single__title", { 
     delay: 100 , 
     origin:'bottom' 
   });
@@ -158,6 +185,7 @@ const frozenCenter = document.querySelector('.p-skills__center');
 const frozenContactCenter = document.querySelector('.p-contact__center');
 
 console.log('frozenCenter:', frozenCenter);
+console.log('frozenContactCenter:', frozenContactCenter);
 
 // 監視対象の要素をObserverに追加
 observer.observe(frozenCenter);
