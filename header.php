@@ -29,6 +29,19 @@
             </h1>
         </div>
         <img class="p-header__img" src="http://localhost:10028/wp-content/uploads/2023/10/IMG_0932.png" alt="ペンギンの画像">
+    
+        <?php
+            if (has_nav_menu('hamburger_nav')) {
+                wp_nav_menu(
+                array(
+                    'theme_location' => 'hamburger_nav',
+                    'container'       => 'nav',
+                    'container_class' => 'p-nav',
+                    'menu_class' => 'c-appear',
+                    'items_wrap'      => '<ul class="%2$s">%3$s</ul>',
+                )
+                );
+            } ?>
     </header>
     </body>
 </html>
