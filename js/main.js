@@ -90,29 +90,42 @@ window.addEventListener('scroll', function () {
 
 
 //スクロールしたら表示
-document.addEventListener('DOMContentLoaded', function() {
-  ScrollReveal({ reset: false, distance:'2rem', duration: 2000 , viewFactor: 0 , threshold: 0.01});
+// document.addEventListener('DOMContentLoaded', function() {
+//   ScrollReveal({ reset: false, distance:'2rem', duration: 2000 , viewFactor: 0 , threshold: 0.01});
   
-  ScrollReveal().reveal("h1", { 
-    origin:'bottom' 
-  });
-  ScrollReveal().reveal("h2, .p-single__title", { 
-    delay: 100 , 
-    origin:'bottom' 
-  });
-  ScrollReveal().reveal(".c-fw-500", { 
-    delay: 300 , 
-    origin:'bottom' 
-  });
+//   ScrollReveal().reveal("h1", { 
+//     origin:'bottom' 
+//   });
+//   ScrollReveal().reveal("h2, .p-single__title", { 
+//     delay: 100 , 
+//     origin:'bottom' 
+//   });
+//   ScrollReveal().reveal(".c-fw-500", { 
+//     delay: 300 , 
+//     origin:'bottom' 
+//   });
+//   ScrollReveal().reveal(".p-skills__left, .p-skills__right, .p-skills__gallery-img , .p-works__card ", {
+//     delay: 300 ,
+//     origin:'bottom',
+//     interval:200
+//   });
+//   ScrollReveal().reveal(".snow-monkey-form", { 
+//     delay: 400 , 
+//     origin:'bottom' 
+//   });  
+// });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  ScrollReveal({ reset: false, distance: '2rem', duration: 2000, viewFactor: 0, threshold: 0.01 });
+  ScrollReveal().reveal("h1,h2, .p-single__title", { origin: 'bottom' });
+  ScrollReveal().reveal(".c-fw-500", { delay: 100, origin: 'bottom' });
   ScrollReveal().reveal(".p-skills__left, .p-skills__right, .p-skills__gallery-img , .p-works__card ", {
-    delay: 300 ,
-    origin:'bottom',
-    interval:200
+    delay: 300,
+    origin: 'bottom',
+    interval: 200
   });
-  ScrollReveal().reveal(".snow-monkey-form", { 
-    delay: 400 , 
-    origin:'bottom' 
-  });  
+  ScrollReveal().reveal(".snow-monkey-form", { delay: 400, origin: 'bottom' });
 });
 
 
