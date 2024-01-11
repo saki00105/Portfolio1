@@ -1,17 +1,58 @@
 <?php get_header(); ?>
 
     <div class="p-single">
-        <h2 class="l-inner__contents">
-            <?php the_title( );?>
-        </h2>
-        <?php the_content(); ?>
-
+        <!-- <h2 class="l-inner__contents">
+           
+        </h2> -->
         <?php
-            if( has_post_thumbnail() ) {
-                $postthumb =wp_get_attachment_image_src( get_post_thumbnail_id(),'full' );
-                $url = $postthumb[0];
-            }
-        ?>
+            if (has_nav_menu('hamburger_nav')) {
+                wp_nav_menu(
+                array(
+                    'theme_location' => 'hamburger_nav',
+                    'container'       => 'nav',
+                    'container_class' => 'p-nav',
+                    'items_wrap'      => '<ul class="%2$s">%3$s</ul>',
+                )
+                );
+            } ?>
+
+        <div>
+            <?php
+                if( have_posts() ) :
+                    while( have_posts() ) :
+                        the_post(); ?>
+                        <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                            
+                            <?php the_content(); ?>
+                            <?php $args = array (
+                                'before' => '<div class="page-split">',
+                                'after' => '</div>',
+                                'link_before' => '<span>',
+                                'link_after' => '</span>',
+                                );
+                                wp_link_pages( $args );
+                            ?>
+                        </div>
+                        
+                        <!-- <?php if( get_previous_post() || get_next_post() ) : ?>
+                            <ul class="p-pagenation">
+                                <?php if ( get_previous_post() ) : ?>
+                                    <li class="prevpostslink"><?php previous_post_link( '%link', '< 前へ' ); ?></li>
+                                <?php endif; ?>
+                                <?php if( get_next_post() ): ?>
+                                    <li class="prevpostslink"><?php next_post_link( '%link', '次へ >' ); ?></li>
+                                <?php endif; ?>
+                            </ul>
+                        <?php endif; ?> -->
+                    <?php endwhile;
+                else :
+                    ?><p>表示する記事がありません</p><?php
+                endif; 
+            ?>
+        </div>
+            <?php get_sidebar(); ?>
+        </div>
+    </div>
 
         <!-- 流体シェイプ -->
         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="l-shape p-shape__left">

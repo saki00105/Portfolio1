@@ -9,8 +9,6 @@
         <meta name="keywords" content="WordPress, Theme, development">
         <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/common/ico/favicon.ico">
         <?php wp_head(); ?>
-
-        
     </head>
 
     <body <?php body_class(); ?>>
@@ -41,7 +39,8 @@
                     'items_wrap'      => '<ul class="%2$s">%3$s</ul>',
                 )
                 );
-            } ?>
+            } 
+        ?>
     </header>
     </body>
 </html>
