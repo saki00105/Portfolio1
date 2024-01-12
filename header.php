@@ -15,7 +15,7 @@
 
 <!-- loading -->
     <div class="l-loader">
-        <div class="  p-loader">Loading...</div>
+        <div class="p-loader">Loading...</div>
     </div>
 
 <!-- header -->
@@ -23,7 +23,7 @@
         <div class="p-header__layer">
 
             <h1 class="p-header">
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?>
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
             </h1>
         </div>
         <img class="p-header__img" src="http://localhost:10028/wp-content/uploads/2023/10/IMG_0932.png" alt="ペンギンの画像">

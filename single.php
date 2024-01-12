@@ -49,6 +49,7 @@
                     ?><p>表示する記事がありません</p><?php
                 endif; 
             ?>
+            <?php wp_pagenavi(); ?>
         </div>
             <?php get_sidebar(); ?>
         </div>
