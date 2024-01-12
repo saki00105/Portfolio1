@@ -2,7 +2,6 @@
 
     <div class="p-main">  
         
-    
         <?php the_content(); ?>
         
         <!-- 流体シェイプ -->

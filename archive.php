@@ -17,7 +17,10 @@
             } ?>
 
         <div>
+        <?php the_content(); ?>
+
         <?php 
+
             if (have_posts(  )):
                 while(have_posts(  )):
                     the_post(  ); ?> 
@@ -49,7 +52,7 @@
             else:?>
                 <p>記事はありません</p>
         <?php endif; ?>
-
+        <?php wp_pagenavi(); ?>
 
         </div>
             <?php get_sidebar(); ?>

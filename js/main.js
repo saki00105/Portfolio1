@@ -6,7 +6,7 @@
 // });
 // console.log();
 
-// //gsapアニメーション
+// // //gsapアニメーション
 // const penguin = document.querySelector('.p-header__img');
 // gsap.to(penguin, {
 //   duration: 4.5,
@@ -15,32 +15,62 @@
 //   opacity: 1
 // });
 
-// ローディング画面
+// const loading = document.querySelector('.l-loader');
+// const penguin = document.querySelector('.p-header__img');
+
+// // アニメーションを開始する関数
+// function startAnimation() {
+//   gsap.to(penguin, {
+//     duration: 4.5,
+//     ease: "elastic.out(1, 0.3)",
+//     y: -250,
+//     opacity: 1
+//   });
+// }
+
+// // ウィンドウのloadイベントのリスナー
+// window.addEventListener('load', () => {
+//   // ローディングが完了したらクラスを追加
+//   loading.classList.add('l-loaded', 'p-loaded');
+//   // ローディングが完了した後にアニメーションを開始する関数を呼び出す
+//   startAnimation();
+// });
+
+
 const loading = document.querySelector('.l-loader');
-// ウィンドウのロードが完了した時のイベントリスナー
-window.addEventListener('load', () => {
-  // ローディング画面のクラスを追加
-  loading.classList.add('l-loaded', 'p-loaded');
-
-// gsapアニメーション対象
 const penguin = document.querySelector('.p-header__img');
+const header = document.querySelector('.p-header');
 
-// gsapアニメーションを再生する関数
-function playAnimation() {
-  // gsapアニメーション
-  gsap.to(penguin, {
+// アニメーションを開始する関数
+function startAnimation() {
+  const tl = gsap.timeline();
+
+  // .p-header__imgのアニメーション
+  tl.to(penguin, {
     duration: 4.5,
     ease: "elastic.out(1, 0.3)",
     y: -250,
     opacity: 1
   });
+
+  // .p-headerのアニメーション
+  tl.to(header, {
+    duration: 1,
+    opacity: 1,
+    // transform: 'translateY(2)',
+    // y: -250,
+    ease: 'ease-out',
+  }, '-=4'); // -=2 は、前のアニメーションが2秒かかるため、それよりも2秒早く開始することを指定しています。
 }
 
-  // 一定時間後にgsapのアニメーションを再生
-  setTimeout(() => {
-    playAnimation();
-  }); 
+// ウィンドウのloadイベントのリスナー
+window.addEventListener('load', () => {
+  // ローディングが完了したらクラスを追加
+  loading.classList.add('l-loaded', 'p-loaded');
+  // ローディングが完了した後にアニメーションを開始する関数を呼び出す
+  startAnimation();
 });
+
 
 
 
@@ -118,7 +148,7 @@ window.addEventListener('scroll', function () {
 
 document.addEventListener('DOMContentLoaded', function() {
   ScrollReveal({ reset: false, distance: '2rem', duration: 2000, viewFactor: 0, threshold: 0.01 });
-  ScrollReveal().reveal("h1,h2, .p-single__title", { origin: 'bottom' });
+  ScrollReveal().reveal("h2, .p-single__title", { origin: 'bottom' });
   ScrollReveal().reveal(".c-fw-500", { delay: 100, origin: 'bottom' });
   ScrollReveal().reveal(".p-skills__left, .p-skills__right, .p-skills__gallery-img , .p-works__card ", {
     delay: 300,

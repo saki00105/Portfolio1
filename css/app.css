@@ -427,6 +427,8 @@ textarea:not([rows]) {
   letter-spacing: 1.5rem;
   text-align: left;
   display: flex;
+  transition: 1s;
+  opacity: 0;
 }
 @media screen and (max-width: 640px) {
   .p-header {
