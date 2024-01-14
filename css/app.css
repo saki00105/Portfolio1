@@ -317,6 +317,45 @@ textarea:not([rows]) {
   animation-delay: 0.5s;
 }
 
+.c-line--hamburger {
+  position: relative;
+  width: inherit;
+  height: inherit;
+  border: 0.1rem solid #ffffff;
+  cursor: pointer;
+  /* is-activeクラスが付いたら、×にする */
+}
+.c-line--hamburger span {
+  display: block;
+  position: relative;
+  left: 50%;
+  width: 30px; /*線の横幅*/
+  height: 2px; /* 線の高さ*/
+  transform: translateX(-50%);
+  background: #ffffff; /*線の色*/
+  transition: all 0.5s;
+}
+.c-line--hamburger span:nth-of-type(1) {
+  top: -4px;
+}
+.c-line--hamburger span:nth-of-type(2) {
+  top: 1px;
+}
+.c-line--hamburger span:nth-of-type(3) {
+  top: 6px;
+}
+.c-line--hamburger.is-active span:nth-of-type(1) {
+  top: 0;
+  transform: rotate(-45deg);
+}
+.c-line--hamburger.is-active span:nth-of-type(2) {
+  opacity: 0;
+}
+.c-line--hamburger.is-active span:nth-of-type(3) {
+  top: -4px;
+  transform: rotate(-135deg);
+}
+
 .c-fw-500 {
   font-weight: 500;
 }
@@ -640,7 +679,7 @@ textarea:not([rows]) {
   transition: all 0.3s ease 0s;
 }
 .p-works__card > .smb-panels__item h3 {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 .p-contact {
   margin-top: 30rem;
@@ -688,6 +727,10 @@ textarea:not([rows]) {
 
 .p-footer {
   margin-top: 20rem;
+  text-align: center;
+}
+.p-footer small {
+  padding: 2rem;
 }
 
 .p-shape__left {
@@ -756,6 +799,14 @@ textarea:not([rows]) {
 }
 .p-nav--single {
   top: 3rem;
+}
+.p-nav__hamburger.is-active {
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  opacity: 1;
+  transition: 0.6s;
 }
 
 @media screen and (max-width: 640px) {
@@ -877,13 +928,28 @@ textarea:not([rows]) {
   transition: all 0.3s ease 0s;
 }
 .p-archive__card h3 {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 .p-archive__card a {
+  margin-top: 1.2rem;
   width: 100%;
   border-radius: 1rem;
-  padding: 1rem;
   text-align: center;
+}
+@media screen and (max-width: 640px) {
+  .p-archive__card a {
+    padding: 0.5rem;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+  .p-archive__card a {
+    padding: 1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-archive__card a {
+    padding: 1rem;
+  }
 }
 .p-archive__card a:hover {
   background-color: #729dd9;

@@ -28,6 +28,16 @@
         </div>
         <img class="p-header__img" src="http://localhost:10028/wp-content/uploads/2023/10/IMG_0932.png" alt="ペンギンの画像">
     
+
+        <div class="p-nav__hamburger">
+            <button class="c-line__hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+
         <?php
             if (has_nav_menu('hamburger_nav')) {
                 wp_nav_menu(
@@ -41,6 +51,11 @@
                 );
             } 
         ?>
+
+        
+
+
+
     </header>
     </body>
 </html>
