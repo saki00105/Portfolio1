@@ -16,6 +16,17 @@
 
         <h2 class="l-inner__contact p-archive__title"><?php get_the_title();?>Warks</h2>
 
+        <!-- <?php
+            // ページのタイトルを取得
+            $page_title = get_the_title();
+
+            // タイトルが存在する場合に表示
+            if ($page_title) {
+                echo '<h1>' . esc_html($page_title) . '</h1>';
+            }
+        ?> -->
+
+
         <div class="l-inner__contact  p-archive">
 
 
