@@ -56,9 +56,9 @@ function theme_setup(){
 add_action( 'after_setup_theme', 'theme_setup');
 
 
-//ヘッダーの非表示
+//投稿、archiveのヘッダーの非表示
 function my_custom_function() {
-  if (is_single()) {
+  if (is_single() || is_archive()) {
       ?>
       <script>
           document.addEventListener('DOMContentLoaded', function () {
@@ -75,7 +75,14 @@ function my_custom_function() {
 add_action('wp_head', 'my_custom_function');
 
 
-
+function post_has_archive( $args, $post_type ) {
+	if ( 'post' == $post_type ) {
+		$args['rewrite'] = true;
+		$args['has_archive'] = 'works'; //任意のスラッグ名
+	}
+	return $args;
+}
+add_filter( 'register_post_type_args', 'post_has_archive', 10, 2 );
 
 
 // function custom_print_scripts() {

@@ -1,9 +1,6 @@
 <?php get_header(); ?>
 
     <div class="p-single">
-        <!-- <h2 class="l-inner__contents">
-           
-        </h2> -->
         <?php
             if (has_nav_menu('hamburger_nav')) {
                 wp_nav_menu(
@@ -14,48 +11,57 @@
                     'items_wrap'      => '<ul class="%2$s">%3$s</ul>',
                 )
                 );
-            } ?>
+            } 
+        ?>
 
-        <div>
-        <?php 
+        <h2 class="l-inner__contact p-archive__title"><?php get_the_title();?>Warks</h2>
 
-            if (have_posts(  )):
-                while(have_posts(  )):
-                    the_post(  ); ?> 
-                    
-                    <li  id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                        <figure class="p-card__archive-wrap c-flex">
-                            <div class="p-card__archive-img c-flex">
-                                <?php the_post_thumbnail(  );?>
-                            </div>
-                            <figcaption class="p-card__archive-content c-color--white">
-                                <h2 class="c-text--h2"><?php the_title();?></h2>
-                                
-                                <?php     
-                                    if (has_excerpt()) {
-                                        echo '<div class="p-card__archive-text c-text--p">';
-                                        the_excerpt();
-                                        echo '</div>';
-                                    } 
-                                    else{
-                                        the_content( '',FALSE,'');
-                                    }
-                                ?>
-                                <a  class="p-card__archive-button c-button--archive c-fw-700" href="<?php the_permalink( ); ?>">詳しく見る</a>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <?php wp_link_pages(); ?>
-                <?php endwhile;
-            else:?>
+        <div class="l-inner__contact  p-archive">
+
+
+            <?php 
+                if (have_posts(  )):
+                    while(have_posts(  )):
+                        the_post(  ); ?> 
+
+                            <li  id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                                <figure class="p-archive__card">
+
+                                        <div class="">
+                                            <?php the_post_thumbnail(  );?>
+                                        </div>
+                                        <figcaption class="">
+                                            <h3 class=""><?php the_title();?></h3>
+                                            
+                                            <?php     
+                                                if (has_excerpt()) {
+                                                    echo '<div class="">';
+                                                    the_excerpt();
+                                                    echo '</div>';
+                                                } 
+                                                else{
+                                                    the_content( '',FALSE,'');
+                                                }
+                                            ?>
+                                            <a  class="p-archive__button c-button" href="<?php the_permalink( ); ?>">more</a>
+
+                                           
+                                        </figcaption>
+
+
+                                </figure>
+                            </li>
+
+
+                        <?php wp_link_pages(); ?>
+                    <?php endwhile;
+                else:?>
                 <p>記事はありません</p>
-        <?php endif; ?>
-        <?php wp_pagenavi(); ?>
+            <?php endif; ?>
+            <!-- <?php the_content(); ?> -->
 
+        
         </div>
-            <?php get_sidebar(); ?>
-        </div>
-    </div>
 
         <!-- 流体シェイプ -->
         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="l-shape p-shape__left">

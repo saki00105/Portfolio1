@@ -1,0 +1,8 @@
+@use "../../foundation/variable" as var;
+@use "../../foundation/mixin" as m;
+
+.c-button{
+    display: inline-block;
+    color: var.$white;
+    background-color: var.$bubble;
+}
