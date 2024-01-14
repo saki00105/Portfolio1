@@ -14,9 +14,22 @@
             margin-left: 1rem;
         }
     }
-   
     &--single{
         top: 3rem;
+    }
+    &__hamburger{
+
+        &.is-active{
+            background-color: var.$white;
+            position: fixed;
+            top: 0;
+            right: 0;
+            opacity: 1;
+            transition: 0.6s;
+
+        }
+
+
     }
 }
 

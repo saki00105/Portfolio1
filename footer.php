@@ -4,6 +4,7 @@
                 'theme_location' => 'footer_nav',
             ) );
         ?> -->
+        <p><small>@2023 Saki portfolio</small></p>
     </div>
 </footer>
 </div>
