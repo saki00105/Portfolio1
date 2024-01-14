@@ -201,3 +201,32 @@ console.log('frozenContactCenter:', frozenContactCenter);
 // 監視対象の要素をObserverに追加
 observer.observe(frozenCenter);
 observer.observe(frozenContactCenter);
+
+
+//ハンバーガーメニュー
+document.addEventListener('DOMContentLoaded', function () {
+  const hamburger = document.querySelector('.c-hamburger');
+ 
+  // 追記
+  const headNav = document.querySelector('#js-nav');// #js-nav要素取得して変数に格納
+
+  hamburger.addEventListener('click', () => {
+    if (hamburger.classList.contains("is-active")) {
+      hamburger.classList.remove('is-active');
+      hamburger.querySelector('.c-hamburger__text').textContent = 'MENU';
+
+
+      // 追記
+      headNav.classList.remove('is-active')
+
+
+    } else {
+      hamburger.classList.add('is-active');
+      hamburger.querySelector('.c-hamburger__text').textContent = 'CLOSE';
+     
+      // 追記
+      headNav.classList.add('is-active')
+    }
+  });
+
+});
