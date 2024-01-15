@@ -8,16 +8,58 @@
     z-index: 100;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     // mix-blend-mode: multiply;
+    @include m.sp{
+        opacity: 0;  
+        right: -100%;     
+    }
+    @include m.tab{
+        opacity: 0;
+        right: -100%;            
+    }
+    // @include m.pc{
+    //    
+
+    // }
     > ul {
         display: flex;
+        @include m.sp{
+            flex-flow: column;      
+        }
+        @include m.tab{
+            flex-flow: column;      
+        }
         > li + li {
-            margin-left: 1rem;
+            @include m.sp{
+                margin-top: 1rem;
+            }
+            @include m.tab{
+                margin-top: 1rem;
+            }
+            @include m.pc{
+                margin-left: 1rem;
+            }
         }
     }
     &--single{
         top: 3rem;
     }
     &__hamburger{
+        position: fixed;
+        z-index: 5;
+        // background-color: var.$bubble;
+        
+        @include m.sp{
+            top: 2rem;
+            right: 2rem;      
+        }
+        @include m.tab{
+            top: 5rem;
+            right: 2rem;     
+        }
+        @include m.pc{
+            display: none;      
+        }
+       
 
         &.is-active{
             background-color: var.$white;

@@ -69,10 +69,12 @@
                 else:?>
                 <p>記事はありません</p>
             <?php endif; ?>
-            <!-- <?php the_content(); ?> -->
 
         
         </div>
+
+        <?php the_content(); ?>
+
 
         <!-- 流体シェイプ -->
         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="l-shape p-shape__left">
