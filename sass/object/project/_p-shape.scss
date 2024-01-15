@@ -26,7 +26,6 @@
     }
     &__right{
         position: fixed;
-        
         z-index: -100;
 
         @include m.sp{
@@ -47,6 +46,29 @@
             right:-5rem;
             height: 35rem;
             // height: 50%;
+
+        }
+
+    }
+    &__nav{
+        position: fixed;
+        z-index: 1;
+
+        @include m.sp{
+            top: 3.5rem;
+            right:0.5rem;
+            height: 6rem;
+            // height: 40%;
+
+        }
+        @include m.tab{
+            top: 3.5rem;
+            right:0.5rem;
+            height: 6rem;
+            // height: 40%;
+        }
+        @include m.pc{
+            display: none;
 
         }
 

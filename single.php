@@ -34,7 +34,7 @@
                             ?>
                         </div>
                         
-                        <!-- <?php if( get_previous_post() || get_next_post() ) : ?>
+                        <?php if( get_previous_post() || get_next_post() ) : ?>
                             <ul class="p-pagenation">
                                 <?php if ( get_previous_post() ) : ?>
                                     <li class="prevpostslink"><?php previous_post_link( '%link', '< 前へ' ); ?></li>
@@ -43,7 +43,8 @@
                                     <li class="prevpostslink"><?php next_post_link( '%link', '次へ >' ); ?></li>
                                 <?php endif; ?>
                             </ul>
-                        <?php endif; ?> -->
+                        <?php endif; ?>
+                        
                     <?php endwhile;
                 else :
                     ?><p>表示する記事がありません</p><?php

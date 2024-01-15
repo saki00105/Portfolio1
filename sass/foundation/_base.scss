@@ -23,6 +23,12 @@ a:not(cite>a){
     color: var.$font-blue;
     text-decoration: none;
 }
+button{
+    all: unset;
+    &:hover{
+        cursor: pointer;
+    }
+}
 h2{
     font-size: 3rem;
 }
