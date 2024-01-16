@@ -738,11 +738,11 @@ textarea:not([rows]) {
 }
 
 .p-footer {
-  margin-top: 20rem;
+  margin-top: 30rem;
   text-align: center;
 }
 .p-footer small {
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .p-shape__left {
@@ -801,7 +801,7 @@ textarea:not([rows]) {
 }
 @media screen and (max-width: 640px) {
   .p-shape__nav {
-    top: 3.5rem;
+    top: 0.5rem;
     right: 0.5rem;
     height: 6rem;
   }
@@ -818,11 +818,14 @@ textarea:not([rows]) {
     display: none;
   }
 }
+.p-shape__nav.is-active {
+  transform: scale(20) translateY(10px);
+  opacity: 0.95;
+  transition: all 0.3s ease-out;
+}
 
 .p-nav {
   position: fixed;
-  top: 1.5rem;
-  right: 2rem;
   z-index: 100;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -836,6 +839,26 @@ textarea:not([rows]) {
   .p-nav {
     opacity: 0;
     right: -100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-nav {
+    top: 1.5rem;
+    right: 2rem;
+  }
+}
+@media screen and (max-width: 640px) {
+  .p-nav.is-active {
+    opacity: 1;
+    top: 20%;
+    right: 40%;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+  .p-nav.is-active {
+    opacity: 1;
+    top: 20%;
+    right: 40%;
   }
 }
 .p-nav > ul {
@@ -1043,6 +1066,29 @@ textarea:not([rows]) {
 }
 .p-archive__card a:hover {
   background-color: #729dd9;
+}
+
+.p-pagenation {
+  margin: 0 auto;
+  margin-top: 10rem;
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+}
+@media screen and (max-width: 640px) {
+  .p-pagenation {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+  .p-pagenation {
+    width: 75%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-pagenation {
+    width: 70%;
+  }
 }
 
 @media screen and (min-width: 600px) and (max-width: 640px) {

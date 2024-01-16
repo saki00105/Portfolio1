@@ -53,23 +53,25 @@
     &__nav{
         position: fixed;
         z-index: 1;
-
+        
         @include m.sp{
-            top: 3.5rem;
+            top: 0.5rem;
             right:0.5rem;
             height: 6rem;
-            // height: 40%;
-
         }
         @include m.tab{
             top: 3.5rem;
             right:0.5rem;
             height: 6rem;
-            // height: 40%;
         }
         @include m.pc{
             display: none;
+        }
 
+        &.is-active{
+            transform: scale(20) translateY(10px);
+            opacity: 0.95;
+            transition: all .3s ease-out;
         }
 
     }
