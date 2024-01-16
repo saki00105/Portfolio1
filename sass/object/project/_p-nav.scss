@@ -3,8 +3,6 @@
 
 .p-nav{
     position: fixed;
-    top: 1.5rem;
-    right: 2rem;
     z-index: 100;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     // mix-blend-mode: multiply;
@@ -16,10 +14,24 @@
         opacity: 0;
         right: -100%;            
     }
-    // @include m.pc{
-    //    
+    @include m.pc{
+        top: 1.5rem;
+        right: 2rem;       
+    }
 
-    // }
+    &.is-active{
+        @include m.sp{
+            opacity: 1; 
+            top: 20%;
+            right: 40%; 
+        }
+        @include m.tab{
+            opacity: 1;
+            top: 20%;
+            right: 40%; 
+        }
+    }
+    
     > ul {
         display: flex;
         @include m.sp{

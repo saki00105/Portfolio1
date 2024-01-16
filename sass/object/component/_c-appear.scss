@@ -1,7 +1,8 @@
 .c-appear{
     /*はじめは非表示*/
-    transform: translateY(100%);
-    opacity: 0;
+        transform: translateY(100%);
+        opacity: 0;
+    
 
     /*　上に上がる動き　*/
     &.UpMove{
