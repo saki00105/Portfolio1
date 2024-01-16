@@ -29,7 +29,7 @@
         <img class="p-header__img" src="http://localhost:10028/wp-content/uploads/2023/10/IMG_0932.png" alt="ペンギンの画像">
     
 
-        <div class="p-nav__hamburger">
+        <div class="p-nav__hamburger c-appear">
             <button class="c-line__hamburger">
                 <span></span>
                 <span></span>
