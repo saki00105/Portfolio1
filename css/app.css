@@ -617,7 +617,7 @@ textarea:not([rows]) {
 }
 @media screen and (min-width: 640px) and (max-width: 1024px) {
   .p-skills__right {
-    top: 40%;
+    display: none;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -738,7 +738,7 @@ textarea:not([rows]) {
 }
 
 .p-footer {
-  margin-top: 30rem;
+  margin-top: 20rem;
   text-align: center;
 }
 .p-footer small {
