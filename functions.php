@@ -21,6 +21,9 @@ function delete_jquery() {
 }
 add_action('init', 'delete_jquery');
 
+
+
+
 //jsの読み込み
 function custom_print_scripts() {
   wp_enqueue_script('gsap-js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js', array(), '1.0.0', true);
@@ -74,11 +77,11 @@ function my_custom_function() {
 
 add_action('wp_head', 'my_custom_function');
 
-
+//archiveの表示
 function post_has_archive( $args, $post_type ) {
 	if ( 'post' == $post_type ) {
 		$args['rewrite'] = true;
-		$args['has_archive'] = 'works'; //任意のスラッグ名
+		$args['has_archive'] = 'works'; 
 	}
 	return $args;
 }

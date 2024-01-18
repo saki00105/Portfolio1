@@ -34,9 +34,10 @@
                 if (have_posts(  )):
                     while(have_posts(  )):
                         the_post(  ); ?> 
-
                             <li  id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
                                 <figure class="p-archive__card">
+                                    <a href="<?php the_permalink( ); ?>">
 
                                         <div class="">
                                             <?php the_post_thumbnail(  );?>
@@ -56,11 +57,13 @@
                                             ?>
                                             <a  class="p-archive__button c-button" href="<?php the_permalink( ); ?>">more</a>
 
-                                           
+
                                         </figcaption>
 
+                                    </a>
 
                                 </figure>
+
                             </li>
 
 
