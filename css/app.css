@@ -1043,28 +1043,28 @@ textarea:not([rows]) {
 .p-archive__card h3 {
   margin-top: 2rem;
 }
-.p-archive__card a {
+.p-archive__button {
   margin-top: 1.2rem;
   width: 100%;
   border-radius: 1rem;
   text-align: center;
 }
 @media screen and (max-width: 640px) {
-  .p-archive__card a {
+  .p-archive__button {
     padding: 0.5rem;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 1024px) {
-  .p-archive__card a {
+  .p-archive__button {
     padding: 1rem;
   }
 }
 @media screen and (min-width: 1024px) {
-  .p-archive__card a {
+  .p-archive__button {
     padding: 1rem;
   }
 }
-.p-archive__card a:hover {
+.p-archive__button:hover {
   background-color: #729dd9;
 }
 
