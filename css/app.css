@@ -357,15 +357,15 @@ textarea:not([rows]) {
   top: 0.5rem;
 }
 .c-line__hamburger.is-active span:nth-of-type(1) {
-  top: 0;
-  transform: rotate(-45deg);
+  top: 0.55rem;
+  transform: rotate(45deg);
 }
 .c-line__hamburger.is-active span:nth-of-type(2) {
   opacity: 0;
 }
 .c-line__hamburger.is-active span:nth-of-type(3) {
-  top: -4px;
-  transform: rotate(-135deg);
+  top: 0.2rem;
+  transform: rotate(135deg);
 }
 
 .c-fw-500 {
@@ -415,6 +415,12 @@ textarea:not([rows]) {
   display: inline-block;
   color: #ffffff;
   background-color: #064E93;
+}
+
+.c-fixed {
+  position: fixed;
+  width: 100%;
+  height: 100%;
 }
 
 .p-loader,
@@ -798,17 +804,18 @@ textarea:not([rows]) {
 .p-shape__nav {
   position: fixed;
   z-index: 1;
+  cursor: pointer;
 }
 @media screen and (max-width: 640px) {
   .p-shape__nav {
-    top: 0.5rem;
+    top: 0rem;
     right: 0.5rem;
     height: 6rem;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 1024px) {
   .p-shape__nav {
-    top: 3.5rem;
+    top: 3rem;
     right: 0.5rem;
     height: 6rem;
   }
@@ -819,9 +826,9 @@ textarea:not([rows]) {
   }
 }
 .p-shape__nav.is-active {
-  transform: scale(20) translateY(10px);
+  transform: scale(15) translateX(1rem) translateY(1rem);
   opacity: 0.95;
-  transition: all 0.3s ease-out;
+  transition: all 0.7s ease-out;
 }
 
 .p-nav {
@@ -849,16 +856,20 @@ textarea:not([rows]) {
 }
 @media screen and (max-width: 640px) {
   .p-nav.is-active {
+    overflow: hidden;
     opacity: 1;
-    top: 20%;
-    right: 40%;
+    top: 15%;
+    right: 20%;
+    transition: all 1s ease-out;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 1024px) {
   .p-nav.is-active {
+    overflow: hidden;
     opacity: 1;
-    top: 20%;
-    right: 40%;
+    top: 15%;
+    right: 20%;
+    transition: all 1s ease-out;
   }
 }
 .p-nav > ul {
@@ -876,12 +887,12 @@ textarea:not([rows]) {
 }
 @media screen and (max-width: 640px) {
   .p-nav > ul > li + li {
-    margin-top: 1rem;
+    margin-top: 3rem;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 1024px) {
   .p-nav > ul > li + li {
-    margin-top: 1rem;
+    margin-top: 3rem;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -895,6 +906,8 @@ textarea:not([rows]) {
 .p-nav__hamburger {
   position: fixed;
   z-index: 5;
+  width: 3rem;
+  height: 2rem;
 }
 @media screen and (max-width: 640px) {
   .p-nav__hamburger {
@@ -914,12 +927,26 @@ textarea:not([rows]) {
   }
 }
 .p-nav__hamburger.is-active {
-  background-color: #ffffff;
   position: fixed;
-  top: 0;
-  right: 0;
   opacity: 1;
   transition: 0.6s;
+}
+@media screen and (max-width: 640px) {
+  .p-nav__hamburger.is-active {
+    top: 2rem;
+    right: 2rem;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+  .p-nav__hamburger.is-active {
+    top: 5rem;
+    right: 2rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-nav__hamburger.is-active {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 640px) {
