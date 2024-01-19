@@ -179,6 +179,96 @@ document.addEventListener('DOMContentLoaded', function() {
 
 console.log('テスト');
 
+//ハンバーガーメニュー
+document.addEventListener('DOMContentLoaded', function () {
+  const pShapeNav = document.querySelector('.p-shape__nav, .p-nav__hamburger');
+  const hamburgers = document.querySelectorAll('.p-shape__nav, .p-nav, .p-nav__hamburger, .c-line__hamburger');
+
+  pShapeNav.addEventListener('click', () => {
+    hamburgers.forEach(hamburger => {
+      if (hamburger.classList.contains('is-active')) {
+        hamburger.classList.remove('is-active');
+      } else {
+        hamburger.classList.add('is-active');
+      }
+    });
+  });
+});
+
+
+
+//リサイズ
+document.addEventListener('DOMContentLoaded', function() {
+  window.addEventListener('resize', function() {
+      // "l-sidebar__box" クラスを持つ要素から "is-open" クラスを削除
+      document.querySelectorAll('.p-shape__nav, .p-nav, .p-nav__hamburger, .c-line__hamburger').forEach(function(element) {
+          element.classList.remove('is-active');
+      });
+  });
+});
+console.log("ナビ");
+
+// document.addEventListener('DOMContentLoaded', function () {
+//   // ハンバーガーメニューボタンがクリックされたときのイベントハンドラを設定
+//   document.querySelector(".p-nav").addEventListener('click', function () {
+
+//     // 現在のbodyタグのoverflowスタイルを確認
+//     if (document.body.style.overflow === "hidden") {
+
+//       // もしoverflowがhiddenなら、bodyのスタイルを元に戻す
+//       document.body.style.height = "";
+//       document.body.style.overflow = "";
+
+//     } else {
+
+//       // そうでなければ、bodyにheight: 100%とoverflow: hiddenを設定し、スクロールを無効にする
+//       document.body.style.height = "100%";
+//       document.body.style.overflow = "hidden";
+
+//     }
+//   });
+// });
+
+// document.addEventListener('DOMContentLoaded', function () {
+//   // ハンバーガーメニューボタンがクリックされたときのイベントハンドラを設定
+//   document.querySelector(".p-nav").addEventListener('click', function () {
+
+//     // 現在のbodyタグのoverflowスタイルを確認
+//     if (document.body.style.overflow !== "hidden") {
+
+//       // もしoverflowがhiddenでないなら、bodyにoverflow: hiddenを設定し、スクロールを無効にする
+//       document.body.style.overflow = "hidden";
+
+//     } else {
+
+//       // そうでなければ、bodyのスタイルを元に戻す
+//       document.body.style.overflow = "";
+
+//     }
+//   });
+// });
+
+document.addEventListener('DOMContentLoaded', function () {
+  // ハンバーガーメニューボタンがクリックされたときのイベントハンドラを設定
+  document.querySelector(".p-nav").addEventListener('click', function () {
+
+    // bodyにc-fixedクラスが存在するか確認
+    if (document.body.classList.contains("c-fixed")) {
+
+      // もしc-fixedクラスが既に存在するなら、削除
+      document.body.classList.remove("c-fixed");
+
+    } else {
+
+      // そうでなければ、c-fixedクラスを追加
+      document.body.classList.add("c-fixed");
+
+    }
+  });
+});
+
+
+
 //氷の表示
 const options = { threshold: 0.3 };
 
@@ -210,30 +300,3 @@ observer.observe(frozenContactCenter);
 
 
 
-//ハンバーガーメニュー
-document.addEventListener('DOMContentLoaded', function () {
-  const hamburger = document.querySelector('.c-hamburger');
- 
-  // 追記
-  const headNav = document.querySelector('#js-nav');// #js-nav要素取得して変数に格納
-
-  hamburger.addEventListener('click', () => {
-    if (hamburger.classList.contains("is-active")) {
-      hamburger.classList.remove('is-active');
-      hamburger.querySelector('.c-hamburger__text').textContent = 'MENU';
-
-
-      // 追記
-      headNav.classList.remove('is-active')
-
-
-    } else {
-      hamburger.classList.add('is-active');
-      hamburger.querySelector('.c-hamburger__text').textContent = 'CLOSE';
-     
-      // 追記
-      headNav.classList.add('is-active')
-    }
-  });
-
-});

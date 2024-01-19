@@ -27,9 +27,10 @@
             </h1>
         </div>
         <img class="p-header__img" src="http://localhost:10028/wp-content/uploads/2023/10/IMG_0932.png" alt="ペンギンの画像">
-    
+    </header>
 
-        <div class="p-nav__hamburger c-appear">
+
+        <div class="p-nav__hamburger">
             <button class="c-line__hamburger">
                 <span></span>
                 <span></span>
@@ -45,7 +46,7 @@
                     'theme_location' => 'hamburger_nav',
                     'container'       => 'nav',
                     'container_class' => 'p-nav',
-                    'menu_class' => 'c-appear',
+                    // 'menu_class' => 'c-appear',
                     'items_wrap'      => '<ul class="%2$s">%3$s</ul>',
                 )
                 );
@@ -53,7 +54,7 @@
         ?>
 
          <!-- 流体シェイプ -->
-        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="l-shape p-shape__nav c-appear">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="l-shape p-shape__nav">
             <path fill="#064E93" d="M46.3,-61.2C62.2,-52.3,78.6,-41.6,84.9,-26.6C91.2,-11.5,87.4,7.8,80,24.6C72.7,41.5,61.8,55.8,47.9,65.8C33.9,75.8,17,81.5,-0.4,82.1C-17.8,82.7,-35.7,78.2,-47.8,67.6C-59.9,57,-66.3,40.3,-71,23.6C-75.6,7,-78.5,-9.7,-75.4,-26.2C-72.4,-42.7,-63.6,-59,-50,-68.7C-36.4,-78.4,-18.2,-81.5,-1.5,-79.5C15.2,-77.4,30.5,-70.2,46.3,-61.2Z" transform="translate(100 100)">
                 <animate attributeType="XML" 
                     attributeName="d" 
@@ -70,6 +71,5 @@
                      " />
             </path>
         </svg>
-    </header>
     </body>
 </html>

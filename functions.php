@@ -59,22 +59,6 @@
 // add_action( 'after_setup_theme', 'theme_setup');
 
 
-// //投稿、archiveのヘッダーの非表示
-// function my_custom_function() {
-//   if (is_single() || is_archive()) {
-//       ?>
-//       <script>
-//           document.addEventListener('DOMContentLoaded', function () {
-//               var Header = document.querySelector('.l-header');
-//               if (Header) {
-//                   Header.style.display = 'none';
-//               }
-//           });
-//       </script>
-//       <?php
-//   }
-// }
-
 // add_action('wp_head', 'my_custom_function');
 
 // //archiveの表示
