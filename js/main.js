@@ -229,6 +229,27 @@ console.log("ナビ");
 //   });
 // });
 
+
+document.addEventListener('DOMContentLoaded', function () {
+  // ハンバーガーメニューボタンがクリックされたときのイベントハンドラを設定
+  document.querySelector(".p-nav__hamburger").addEventListener('click', function () {
+
+    // もしハンバーガーメニューが開いているなら
+    if (document.body.classList.contains("c-hidden")) {
+
+      // bodyからmenu-openクラスを削除し、スクロールを有効にする
+      document.body.classList.remove("c-hidden");
+
+    } else {
+
+      // そうでなければ、menu-openクラスを追加し、スクロールを無効にする
+      document.body.classList.add("c-hidden");
+
+    }
+  });
+});
+
+
 // document.addEventListener('DOMContentLoaded', function () {
 //   // ハンバーガーメニューボタンがクリックされたときのイベントハンドラを設定
 //   document.querySelector(".p-nav").addEventListener('click', function () {
@@ -248,24 +269,24 @@ console.log("ナビ");
 //   });
 // });
 
-document.addEventListener('DOMContentLoaded', function () {
-  // ハンバーガーメニューボタンがクリックされたときのイベントハンドラを設定
-  document.querySelector(".p-nav").addEventListener('click', function () {
+// document.addEventListener('DOMContentLoaded', function () {
+//   // ハンバーガーメニューボタンがクリックされたときのイベントハンドラを設定
+//   document.querySelector(".p-nav").addEventListener('click', function () {
 
-    // bodyにc-fixedクラスが存在するか確認
-    if (document.body.classList.contains("c-fixed")) {
+//     // bodyにc-fixedクラスが存在するか確認
+//     if (document.body.classList.contains("c-fixed")) {
 
-      // もしc-fixedクラスが既に存在するなら、削除
-      document.body.classList.remove("c-fixed");
+//       // もしc-fixedクラスが既に存在するなら、削除
+//       document.body.classList.remove("c-fixed");
 
-    } else {
+//     } else {
 
-      // そうでなければ、c-fixedクラスを追加
-      document.body.classList.add("c-fixed");
+//       // そうでなければ、c-fixedクラスを追加
+//       document.body.classList.add("c-fixed");
 
-    }
-  });
-});
+//     }
+//   });
+// });
 
 
 

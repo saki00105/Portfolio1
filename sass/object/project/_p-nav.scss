@@ -69,15 +69,15 @@
         position: fixed;
         z-index: 5;
         width: 3rem;
-        height: 2rem;
+        height: auto;
         // background-color: var.$bubble;
         
         @include m.sp{
-            top: 2rem;
+            top: 1.6rem;
             right: 2rem;      
         }
         @include m.tab{
-            top: 5rem;
+            top: 4.7rem;
             right: 2rem;     
         }
         @include m.pc{

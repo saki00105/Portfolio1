@@ -21,11 +21,9 @@
 @keyframes border_anim {
 	0%{
 		width: 0%;
-        // transform: translateX(0);
 	}
 	100%{
 		width: 100%;
-        // transform: translateX(100%);
 	}
 
 }
@@ -39,20 +37,14 @@
     position: relative;
     width: inherit;
     height: inherit;
-    // margin: 0;
-    // border: 0.1rem solid var.$white;
     cursor: pointer;
-    // transition: 0.5s;
 
     span {
         display: block;
         position: relative;
-        // right: 50%;
-        width: 3rem; /*線の横幅*/
-        height: 0.2rem; /* 線の高さ*/
-        // transform: translateX(-50%);
-        background: var.$white; /*線の色*/
-        // color:var.$white ;
+        width: 3rem; 
+        height: 0.2rem; 
+        background: var.$font-blue;
         transition: all 0.5s;
         &:nth-of-type(1) {
             top: -0.5rem;
@@ -68,22 +60,16 @@
 
     /* is-activeクラスが付いたら、×にする */
     &.is-active span:nth-of-type(1) {
-        top: 0.55rem;
-        // transform: rotate(-45deg);
+        top: 0;
         transform: rotate(45deg);
-
     }
     &.is-active span:nth-of-type(2) {
         opacity: 0;
     }
     &.is-active span:nth-of-type(3) {
-        top: 0.2rem;
+        top: -0.4rem;
         transform: rotate(135deg);
     }
   
 
 }
-
-// .linear{
-//     transition-timing-function: liner;
-// }
