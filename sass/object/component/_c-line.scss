@@ -18,19 +18,19 @@
     }
 }
 
-@keyframes border_anim {
-	0%{
-		width: 0%;
-	}
-	100%{
-		width: 100%;
-	}
+// @keyframes border_anim {
+// 	0%{
+// 		width: 0%;
+// 	}
+// 	100%{
+// 		width: 100%;
+// 	}
 
-}
+// }
 
-.delay-time{  
-    animation-delay: 0.5s;
-}
+// .delay-time{  
+//     animation-delay: 0.5s;
+// }
 
 
 .c-line__hamburger{
@@ -42,18 +42,45 @@
     span {
         display: block;
         position: relative;
-        width: 3rem; 
-        height: 0.2rem; 
         background: var.$font-blue;
         transition: all 0.5s;
+        @include m.sp{
+            height: 0.1rem; 
+            width: 1.5rem; 
+
+        }
+        @include m.tab{
+            height: 0.2rem; 
+            width: 3rem; 
+
+        }
+        
+
+
         &:nth-of-type(1) {
-            top: -0.5rem;
+
+            @include m.sp{
+                top: -0.3rem;
+
+            }
+            @include m.tab{
+                top: -0.5rem;
+
+            }
+            
         }
         &:nth-of-type(2) {
             top: 0;
         }
         &:nth-of-type(3) {
-            top: 0.5rem;
+            @include m.sp{
+                top: 0.3rem;
+
+            }
+            @include m.tab{
+                top: 0.5rem;
+
+            }
         }
     }
 
@@ -67,8 +94,15 @@
         opacity: 0;
     }
     &.is-active span:nth-of-type(3) {
-        top: -0.4rem;
         transform: rotate(135deg);
+        @include m.sp{
+            top: -0.2rem;
+
+        }
+        @include m.tab{
+            top: -0.4rem;
+
+        }
     }
   
 

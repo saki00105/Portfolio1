@@ -57,10 +57,10 @@
         @include m.sp{
             top: 0rem;
             right:0.5rem;
-            height: 6rem;
+            height: 3rem;
         }
         @include m.tab{
-            top: 3rem;
+            top: 0.5rem;
             right:0.5rem;
             height: 6rem;
         }
@@ -70,11 +70,18 @@
 
         &.is-active{
             // transform: scale(20) translateY(10px);
-            transform: scale(15) translateX(1rem) translateY(1rem);
             opacity: 0.95;
             transition: all 0.7s ease-out;
+
+            @include m.sp{
+                top: -0.2rem;
+                transform: scale(15) translateX(0.3rem) translateY(0.7rem) ;
+            }
+           
             @include m.tab{
                 right:10rem;
+                transform: scale(15) translateX(1rem) translateY(1rem);
+
             }
         }
 

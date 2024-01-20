@@ -42,7 +42,7 @@
         opacity: 0;
 
         @include m.sp{
-            min-height: 120rem;
+            min-height: 100rem;
         }
         @include m.tab{
             min-height: 100rem;

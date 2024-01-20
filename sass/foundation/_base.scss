@@ -1,4 +1,5 @@
 @use "./variable" as var;
+@use "./mixin" as m;
 
 
 html.html{
@@ -14,8 +15,18 @@ html{
 // }
 
 body{
+    @include m.sp{
+        font-size: 1rem;
+   
+    }
+    @include m.tab{
+        font-size: 1.6rem;
+   
+    }
+    @include m.pc{
+        font-size: 1.6rem;
+    }
     // overflow: hidden;
-    font-size: 1.6rem;
     // line-height: 5rem;
     font-family: 'Baloo 2', 'M  PLUS Rounded 1c', sans-serif;
     color: var.$font-blue;
@@ -35,14 +46,34 @@ button{
     }
 }
 h2{
-    font-size: 3rem;
+    @include m.sp{
+        font-size: 2rem;
+    }
+    @include m.tab{
+        font-size: 3rem;
+    }
+    @include m.pc{
+        font-size: 3rem;
+
+        // font-size: clamp(4rem, 1.257rem + 2.679vw, 6.4rem);
+    }
 }
 h3{
     font-family: 'M PLUS Rounded 1c';
 }
 p{
-    font-size: 1.2rem;
     font-family: 'M PLUS Rounded 1c';
+    @include m.sp{
+        font-size: 0.7rem;
+    }
+    @include m.tab{
+        font-size: 1rem;
+    }
+    @include m.pc{
+        font-size: 1.2rem;
+
+        // font-size: clamp(4rem, 1.257rem + 2.679vw, 6.4rem);
+    }
 }
 
 ul,ol,li{
