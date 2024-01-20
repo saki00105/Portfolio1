@@ -645,7 +645,7 @@ textarea:not([rows]) {
   margin-top: 2rem;
 }
 .p-contact {
-  margin-top: 30rem;
+  margin: 30rem 0;
   position: relative;
   color: #064E93;
   height: 100%;
@@ -690,7 +690,7 @@ textarea:not([rows]) {
 }
 
 .p-footer {
-  margin-top: 25rem;
+  padding-top: 5rem;
   text-align: center;
 }
 .p-footer small {

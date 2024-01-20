@@ -160,11 +160,11 @@ window.addEventListener('scroll', togglePageTopAnimation);
 
 //スクロール表示
 // document.addEventListener('DOMContentLoaded', function() {
-  ScrollReveal({ reset: false, distance: '2rem', duration: 2000, viewFactor: 0.5});
-  ScrollReveal().reveal("h2, .p-single__title, .p-skills__left", { delay: 300, origin: 'bottom' });
-  ScrollReveal().reveal(".c-fw-500", { delay: 500, origin: 'bottom' });
+  ScrollReveal({ reset: false, distance: '2rem', duration: 2000, viewFactor: 0.3});
+  ScrollReveal().reveal("h2, .p-single__title, .p-skills__left", { delay: 500, origin: 'bottom' });
+  ScrollReveal().reveal(".c-fw-500", { delay: 800, origin: 'bottom' });
   ScrollReveal().reveal(".p-skills__right, .p-skills__gallery-img, .p-works__card", { delay: 300, origin: 'bottom', interval: 200 });
-  ScrollReveal().reveal(".snow-monkey-form", { delay: 600, origin: 'bottom' });
+  ScrollReveal().reveal(".snow-monkey-form", { delay: 300, origin: 'bottom' });
 // });
 
 
