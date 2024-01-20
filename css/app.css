@@ -624,8 +624,25 @@ textarea:not([rows]) {
     max-height: 70rem;
   }
 }
-.p-skills__gallery {
-  margin-top: 5rem;
+@media screen and (max-width: 640px) {
+  .p-skills__gallery {
+    margin: 0 auto;
+    margin-top: 5rem;
+    width: 70%;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+  .p-skills__gallery {
+    margin: 0 auto;
+    margin-top: 5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-skills__gallery {
+    margin: 0 auto;
+    margin-top: 5rem;
+    width: 70%;
+  }
 }
 .p-skills__gallery .wp-element-caption {
   margin-bottom: -2rem;
@@ -645,19 +662,19 @@ textarea:not([rows]) {
 @media screen and (max-width: 640px) {
   .p-skills__center, .p-single__center {
     min-height: 80rem;
-    top: 200px;
+    top: 15rem;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 1024px) {
   .p-skills__center, .p-single__center {
-    min-height: 60rem;
-    top: 250px;
+    min-height: 55rem;
+    top: 17rem;
   }
 }
 @media screen and (min-width: 1024px) {
   .p-skills__center, .p-single__center {
     min-height: 70rem;
-    top: 250px;
+    top: 15rem;
   }
 }
 .p-skills__right {
