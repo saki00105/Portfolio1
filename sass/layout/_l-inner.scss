@@ -4,6 +4,7 @@
 
 .l-inner{
     &__contents{
+        // margin-top: 20rem;
         margin:  0 auto;
         @include m.sp{
             width: 70%;
@@ -16,6 +17,19 @@
         }
     }
     &__contact{
+        // margin-top: 50rem;
+         // @include m.sp{
+    //     // margin-top: 55rem;
+    //     padding-top: 55rem;
+    // }
+    // @include m.tab{
+    //     // margin-top: 25rem;
+    //     padding-top: 25rem;
+    // }
+    // @include m.pc{
+    //     // margin-top: 25rem;
+    //     padding-top: 25rem;
+    // }
         margin:  0 auto;
         @include m.sp{
             width: 80%;

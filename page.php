@@ -1,8 +1,9 @@
 <?php get_header(); ?>
 
     <div class="p-main">  
-        
+
         <?php the_content(); ?>
+
         
         <!-- 流体シェイプ -->
         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="l-shape p-shape__left c-appear DownMove">
@@ -36,7 +37,6 @@
                     " />
             </path>
         </svg>
-                      
-        <?php get_sidebar(); ?>
         <?php get_footer(); ?>
+               
     </div>

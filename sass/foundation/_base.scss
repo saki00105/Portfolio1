@@ -12,6 +12,7 @@ html{
 // html,body {
 //     overflow-x: hidden;
 // }
+
 body{
     // overflow: hidden;
     font-size: 1.6rem;
@@ -19,7 +20,8 @@ body{
     font-family: 'Baloo 2', 'M  PLUS Rounded 1c', sans-serif;
     color: var.$font-blue;
     background:var.$dark-blue;
-    height: 100%;
+    // height: 100%;
+    height: auto;
     letter-spacing: 0.2rem;
 }
 a:not(cite>a){

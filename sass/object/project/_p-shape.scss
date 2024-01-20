@@ -53,7 +53,6 @@
     &__nav{
         position: fixed;
         z-index: 1;
-        cursor: pointer;
         
         @include m.sp{
             top: 0rem;
@@ -75,7 +74,7 @@
             opacity: 0.95;
             transition: all 0.7s ease-out;
             @include m.tab{
-                right:5rem;
+                right:10rem;
             }
         }
 

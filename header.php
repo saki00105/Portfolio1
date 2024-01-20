@@ -15,7 +15,7 @@
 
 <!-- loading -->
     <div class="l-loader">
-        <div class="p-loader">Loading...</div>
+        <!-- <div class="p-loader">Loading...</div> -->
     </div>
 
 <!-- header -->

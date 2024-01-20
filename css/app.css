@@ -31,7 +31,7 @@ ol[role=list] {
 
 /* bodyのデフォルトを設定 */
 body {
-  min-height: 100vh;
+  height: auto;
   line-height: 1.5;
 }
 
@@ -91,7 +91,7 @@ body {
   font-family: "Baloo 2", "M  PLUS Rounded 1c", sans-serif;
   color: #AEC7E9;
   background: #05316D;
-  height: 100%;
+  height: auto;
   letter-spacing: 0.2rem;
 }
 
@@ -139,7 +139,7 @@ body {
   font-family: "Baloo 2", "M  PLUS Rounded 1c", sans-serif;
   color: #AEC7E9;
   background: #05316D;
-  height: 100%;
+  height: auto;
   letter-spacing: 0.2rem;
 }
 
@@ -206,7 +206,7 @@ ol[role=list] {
 
 /* bodyのデフォルトを設定 */
 body {
-  min-height: 100vh;
+  height: auto;
   line-height: 1.5;
 }
 
@@ -297,13 +297,6 @@ textarea:not([rows]) {
 .l-shape {
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><path fill="#064E93" d="M46.3,-61.2C62.2,-52.3,78.6,-41.6,84.9,-26.6C91.2,-11.5,87.4,7.8,80,24.6C72.7,41.5,61.8,55.8,47.9,65.8C33.9,75.8,17,81.5,-0.4,82.1C-17.8,82.7,-35.7,78.2,-47.8,67.6C-59.9,57,-66.3,40.3,-71,23.6C-75.6,7,-78.5,-9.7,-75.4,-26.2C-72.4,-42.7,-63.6,-59,-50,-68.7C-36.4,-78.4,-18.2,-81.5,-1.5,-79.5C15.2,-77.4,30.5,-70.2,46.3,-61.2Z"/></svg>');
   background-size: cover;
-}
-
-.l-loader {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .c-line--marker {
@@ -425,58 +418,6 @@ textarea:not([rows]) {
 
 .c-hidden {
   overflow: hidden;
-}
-
-.p-loader,
-.p-loader:before,
-.p-loader:after {
-  border-radius: 50%;
-  width: 2.5em;
-  height: 2.5em;
-  animation-fill-mode: both;
-  animation: load7 1.8s infinite ease-in-out;
-}
-
-.p-loader {
-  color: #AEC7E9;
-  font-size: 10px;
-  margin: 80px auto;
-  position: relative;
-  text-indent: -9999em;
-  transform: translateZ(0);
-  animation-delay: -0.16s;
-}
-
-.p-loader:before,
-.p-loader:after {
-  content: "";
-  position: absolute;
-  top: 0;
-}
-
-.p-loader:before {
-  left: -3.5em;
-  animation-delay: -0.32s;
-}
-
-.p-loader:after {
-  left: 3.5em;
-}
-@keyframes load7 {
-  0%, 80%, 100% {
-    box-shadow: 0 2.5em 0 -1.3em;
-  }
-  40% {
-    box-shadow: 0 2.5em 0 0;
-  }
-}
-.l-loaded {
-  height: 0;
-}
-
-.p-loaded {
-  opacity: 0;
-  visibility: hidden;
 }
 
 .p-header__layer {
@@ -658,7 +599,7 @@ textarea:not([rows]) {
 
 .p-about {
   color: #ffffff;
-  margin-top: 10rem;
+  padding-top: 10rem;
 }
 .p-about__text {
   margin-top: 5rem;
@@ -675,17 +616,17 @@ textarea:not([rows]) {
 }
 @media screen and (max-width: 640px) {
   .p-works {
-    margin-top: 55rem;
+    padding-top: 55rem;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 1024px) {
   .p-works {
-    margin-top: 25rem;
+    padding-top: 25rem;
   }
 }
 @media screen and (min-width: 1024px) {
   .p-works {
-    margin-top: 25rem;
+    padding-top: 25rem;
   }
 }
 .p-works__text {
@@ -749,7 +690,7 @@ textarea:not([rows]) {
 }
 
 .p-footer {
-  margin-top: 5rem;
+  margin-top: 25rem;
   text-align: center;
 }
 .p-footer small {
@@ -809,7 +750,6 @@ textarea:not([rows]) {
 .p-shape__nav {
   position: fixed;
   z-index: 1;
-  cursor: pointer;
 }
 @media screen and (max-width: 640px) {
   .p-shape__nav {
@@ -837,7 +777,7 @@ textarea:not([rows]) {
 }
 @media screen and (min-width: 640px) and (max-width: 1024px) {
   .p-shape__nav.is-active {
-    right: 5rem;
+    right: 10rem;
   }
 }
 
