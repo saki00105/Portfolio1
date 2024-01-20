@@ -3,6 +3,7 @@
 
 .p-skills{
     margin-top: 12rem;
+    // padding-top: 12rem;
     position: relative;
     height: 110%;
     width: 100%;
@@ -35,7 +36,7 @@
         opacity: 0;
 
         @include m.sp{
-            min-height: 110rem;
+            min-height: 80rem;
             top: 200px;
         }
         @include m.tab{

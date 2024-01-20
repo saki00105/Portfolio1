@@ -7,15 +7,16 @@
         <meta name="format-detection" content="telephone=no">
         <meta name="description" content="sakiについてのPortfolioサイトです。未経験からWeb制作業界への転職を目指し日々学習中です。">
         <meta name="keywords" content="WordPress, Theme, development">
-        <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/common/ico/favicon.ico">
+        
         <?php wp_head(); ?>
     </head>
 
     <body <?php body_class(); ?>>
+    <?php wp_body_open(); ?>
 
 <!-- loading -->
     <div class="l-loader">
-        <div class="p-loader">Loading...</div>
+        <!-- <div class="p-loader">Loading...</div> -->
     </div>
 
 <!-- header -->
@@ -25,8 +26,10 @@
             <h1 class="p-header">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
             </h1>
+
         </div>
         <img class="p-header__img" src="http://localhost:10028/wp-content/uploads/2023/10/IMG_0932.png" alt="ペンギンの画像">
+
     </header>
 
 

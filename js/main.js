@@ -1,38 +1,38 @@
 // //ローディング画面
 
-// const loading = document.querySelector('.l-loader');
-// const penguin = document.querySelector('.p-header__img');
-// const header = document.querySelector('.p-header');
+const loading = document.querySelector('.l-loader');
+const penguin = document.querySelector('.p-header__img');
+const header = document.querySelector('.p-header');
 
 // // アニメーションを開始する関数
-// function startAnimation() {
-//   const tl = gsap.timeline();
+function startAnimation() {
+  const tl = gsap.timeline();
 
-//   // .p-header__imgのアニメーション
-//   tl.to(penguin, {
-//     duration: 4.5,
-//     ease: "elastic.out(1, 0.3)",
-//     y: -250,
-//     opacity: 1
-//   });
+  // .p-header__imgのアニメーション
+  tl.to(penguin, {
+    duration: 4.5,
+    ease: "elastic.out(1, 0.3)",
+    y: -250,
+    opacity: 1
+  });
 
-//   // .p-headerのアニメーション
-//   tl.to(header, {
-//     duration: 1,
-//     opacity: 1,
-//     // transform: 'translateY(2)',
-//     // y: -250,
-//     ease: 'ease-out',
-//   }, '-=4'); // -=2 は、前のアニメーションが2秒かかるため、それよりも2秒早く開始することを指定しています。
-// }
+  // .p-headerのアニメーション
+  tl.to(header, {
+    duration: 1,
+    opacity: 1,
+    // transform: 'translateY(2)',
+    // y: -250,
+    ease: 'ease-out',
+  }, '-=4'); // -=2 は、前のアニメーションが2秒かかるため、それよりも2秒早く開始することを指定しています。
+}
 
 // // ウィンドウのloadイベントのリスナー
-// window.addEventListener('load', () => {
-//   // ローディングが完了したらクラスを追加
-//   loading.classList.add('l-loaded', 'p-loaded');
-//   // ローディングが完了した後にアニメーションを開始する関数を呼び出す
-//   startAnimation();
-// });
+window.addEventListener('load', () => {
+  // ローディングが完了したらクラスを追加
+  // loading.classList.add('l-loaded', 'p-loaded');
+  // ローディングが完了した後にアニメーションを開始する関数を呼び出す
+  startAnimation();
+});
 
 
 
@@ -125,23 +125,23 @@
 
 
 
-const loading = document.querySelector('.l-loader');
-const penguin = document.querySelector('.p-header__img');
-const header = document.querySelector('.p-header');
+// const loading = document.querySelector('.l-loader');
+// const penguin = document.querySelector('.p-header__img');
+// const header = document.querySelector('.p-header');
 
-// アニメーションを開始する関数
-function startAnimation() {
-  const tl = gsap.timeline();
+// // アニメーションを開始する関数
+// function startAnimation() {
+//   const tl = gsap.timeline();
   
-  tl.to(penguin, { duration: 4.5, ease: "elastic.out(1, 0.3)", y: -250, opacity: 1 })
-    .to(header, { duration: 1, opacity: 1, ease: 'ease-out' }, '-=4');
-}
+//   tl.to(penguin, { duration: 4.5, ease: "elastic.out(1, 0.3)", y: -250, opacity: 1 })
+//     .to(header, { duration: 1, opacity: 1, ease: 'ease-out' }, '-=4');
+// }
 
-// ウィンドウのloadイベントのリスナー
-window.addEventListener('load', () => {
-  loading.classList.add('l-loaded', 'p-loaded');
-  startAnimation();
-});
+// // ウィンドウのloadイベントのリスナー
+// window.addEventListener('load', () => {
+//   loading.classList.add('l-loaded', 'p-loaded');
+//   startAnimation();
+// });
 
 //shape
 function togglePageTopAnimation() {
@@ -155,26 +155,27 @@ function togglePageTopAnimation() {
   });
 }
 
-// 画面をスクロールしたら動かす
 window.addEventListener('scroll', togglePageTopAnimation);
 
+
+//スクロール表示
 // document.addEventListener('DOMContentLoaded', function() {
-//   ScrollReveal({ reset: false, distance: '2rem', duration: 2000, viewFactor: 0, threshold: 0.01 });
-//   ScrollReveal().reveal("h2, .p-single__title", { origin: 'bottom' });
-//   ScrollReveal().reveal(".c-fw-500", { delay: 100, origin: 'bottom' });
-//   ScrollReveal().reveal(".p-skills__left, .p-skills__right, .p-skills__gallery-img, .p-works__card", { delay: 300, origin: 'bottom', interval: 200 });
-//   ScrollReveal().reveal(".snow-monkey-form", { delay: 400, origin: 'bottom' });
+  ScrollReveal({ reset: false, distance: '2rem', duration: 2000, viewFactor: 0.3});
+  ScrollReveal().reveal("h2, .p-single__title, .p-skills__left", { delay: 500, origin: 'bottom' });
+  ScrollReveal().reveal(".c-fw-500", { delay: 800, origin: 'bottom' });
+  ScrollReveal().reveal(".p-skills__right, .p-skills__gallery-img, .p-works__card", { delay: 300, origin: 'bottom', interval: 200 });
+  ScrollReveal().reveal(".snow-monkey-form", { delay: 300, origin: 'bottom' });
 // });
 
 
-document.addEventListener('DOMContentLoaded', function() {
-  const scrollReveal = ScrollReveal({ reset: false, distance: '2rem', duration: 2000, viewFactor: 0, threshold: 0.01 });
+// document.addEventListener('DOMContentLoaded', function() {
+//   const scrollReveal = ScrollReveal({ reset: false, distance: '2rem', duration: 2000, viewFactor: 0, threshold: 0.01 });
 
-  scrollReveal.reveal("h2, .p-single__title", { origin: 'bottom' });
-  scrollReveal.reveal(".c-fw-500", { delay: 100, origin: 'bottom' });
-  scrollReveal.reveal(".p-skills__left, .p-skills__right, .p-skills__gallery-img, .p-works__card", { delay: 300, origin: 'bottom', interval: 200 });
-  scrollReveal.reveal(".snow-monkey-form", { delay: 400, origin: 'bottom' });
-});
+//   scrollReveal.reveal("h2, .p-single__title", { origin: 'bottom' });
+//   scrollReveal.reveal(".c-fw-500", { delay: 100, origin: 'bottom' });
+//   scrollReveal.reveal(".p-skills__left, .p-skills__right, .p-skills__gallery-img, .p-works__card", { delay: 300, origin: 'bottom', interval: 200 });
+//   scrollReveal.reveal(".snow-monkey-form", { delay: 400, origin: 'bottom' });
+// });
 
 
 console.log('テスト');
@@ -200,98 +201,31 @@ document.addEventListener('DOMContentLoaded', function () {
 //リサイズ
 document.addEventListener('DOMContentLoaded', function() {
   window.addEventListener('resize', function() {
-      // "l-sidebar__box" クラスを持つ要素から "is-open" クラスを削除
       document.querySelectorAll('.p-shape__nav, .p-nav, .p-nav__hamburger, .c-line__hamburger').forEach(function(element) {
           element.classList.remove('is-active');
+          document.body.classList.remove("c-hidden");
+
       });
   });
 });
 console.log("ナビ");
 
-// document.addEventListener('DOMContentLoaded', function () {
-//   // ハンバーガーメニューボタンがクリックされたときのイベントハンドラを設定
-//   document.querySelector(".p-nav").addEventListener('click', function () {
-
-//     // 現在のbodyタグのoverflowスタイルを確認
-//     if (document.body.style.overflow === "hidden") {
-
-//       // もしoverflowがhiddenなら、bodyのスタイルを元に戻す
-//       document.body.style.height = "";
-//       document.body.style.overflow = "";
-
-//     } else {
-
-//       // そうでなければ、bodyにheight: 100%とoverflow: hiddenを設定し、スクロールを無効にする
-//       document.body.style.height = "100%";
-//       document.body.style.overflow = "hidden";
-
-//     }
-//   });
-// });
-
-
 document.addEventListener('DOMContentLoaded', function () {
-  // ハンバーガーメニューボタンがクリックされたときのイベントハンドラを設定
   document.querySelector(".p-nav__hamburger").addEventListener('click', function () {
-
-    // もしハンバーガーメニューが開いているなら
     if (document.body.classList.contains("c-hidden")) {
-
-      // bodyからmenu-openクラスを削除し、スクロールを有効にする
       document.body.classList.remove("c-hidden");
 
     } else {
-
-      // そうでなければ、menu-openクラスを追加し、スクロールを無効にする
       document.body.classList.add("c-hidden");
-
     }
   });
 });
 
 
-// document.addEventListener('DOMContentLoaded', function () {
-//   // ハンバーガーメニューボタンがクリックされたときのイベントハンドラを設定
-//   document.querySelector(".p-nav").addEventListener('click', function () {
-
-//     // 現在のbodyタグのoverflowスタイルを確認
-//     if (document.body.style.overflow !== "hidden") {
-
-//       // もしoverflowがhiddenでないなら、bodyにoverflow: hiddenを設定し、スクロールを無効にする
-//       document.body.style.overflow = "hidden";
-
-//     } else {
-
-//       // そうでなければ、bodyのスタイルを元に戻す
-//       document.body.style.overflow = "";
-
-//     }
-//   });
-// });
-
-// document.addEventListener('DOMContentLoaded', function () {
-//   // ハンバーガーメニューボタンがクリックされたときのイベントハンドラを設定
-//   document.querySelector(".p-nav").addEventListener('click', function () {
-
-//     // bodyにc-fixedクラスが存在するか確認
-//     if (document.body.classList.contains("c-fixed")) {
-
-//       // もしc-fixedクラスが既に存在するなら、削除
-//       document.body.classList.remove("c-fixed");
-
-//     } else {
-
-//       // そうでなければ、c-fixedクラスを追加
-//       document.body.classList.add("c-fixed");
-
-//     }
-//   });
-// });
-
 
 
 //氷の表示
-const options = { threshold: 0.3 };
+const options = { threshold: 0.1 };
 
 const observer = new IntersectionObserver((entries, observer) => {
   entries.forEach(entry => {

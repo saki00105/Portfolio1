@@ -5,13 +5,16 @@
 .p-works{
     color: var.$white;
     @include m.sp{
-        margin-top: 55rem;
+        margin-top: 50rem;
+        // padding-top: 55rem;
     }
     @include m.tab{
         margin-top: 25rem;
+        // padding-top: 25rem;
     }
     @include m.pc{
         margin-top: 25rem;
+        // padding-top: 25rem;
     }
 
     &__text{

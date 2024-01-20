@@ -2,7 +2,8 @@
 @use "../../foundation/mixin" as m;
 
 .p-contact{
-    margin-top: 30rem;
+    margin: 30rem 0 ;
+    // padding-top: 30rem;
     position: relative; 
     color: var.$bubble;
     height: 100%;
@@ -41,7 +42,7 @@
         opacity: 0;
 
         @include m.sp{
-            min-height: 120rem;
+            min-height: 100rem;
         }
         @include m.tab{
             min-height: 100rem;
