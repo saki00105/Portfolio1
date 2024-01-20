@@ -587,7 +587,7 @@ textarea:not([rows]) {
 @media screen and (max-width: 640px) {
   .p-header__img {
     justify-content: center;
-    top: 33rem;
+    top: 80%;
     left: 30%;
     width: 40%;
   }
@@ -595,7 +595,7 @@ textarea:not([rows]) {
 @media screen and (min-width: 640px) and (max-width: 1024px) {
   .p-header__img {
     justify-content: center;
-    top: 35rem;
+    top: 75%;
     left: 35%;
     width: 35%;
   }
@@ -650,7 +650,7 @@ textarea:not([rows]) {
 }
 @media screen and (min-width: 640px) and (max-width: 1024px) {
   .p-skills__center, .p-single__center {
-    min-height: 70rem;
+    min-height: 60rem;
     top: 250px;
   }
 }
@@ -700,7 +700,7 @@ textarea:not([rows]) {
 }
 
 .p-main {
-  height: 100%;
+  height: auto;
 }
 
 .p-about {
@@ -765,10 +765,10 @@ textarea:not([rows]) {
   margin-top: 2rem;
 }
 .p-contact {
-  margin: 30rem 0;
+  margin-top: 30rem;
   position: relative;
   color: #064E93;
-  height: 100%;
+  height: auto;
 }
 .p-contact__text {
   margin-top: 5rem;
@@ -810,8 +810,22 @@ textarea:not([rows]) {
 }
 
 .p-footer {
-  padding-top: 5rem;
   text-align: center;
+}
+@media screen and (max-width: 640px) {
+  .p-footer {
+    padding-top: 20rem;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+  .p-footer {
+    padding-top: 15rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-footer {
+    padding-top: 15rem;
+  }
 }
 .p-footer small {
   padding: 1rem;
@@ -824,8 +838,8 @@ textarea:not([rows]) {
 @media screen and (max-width: 640px) {
   .p-shape__left {
     top: -5rem;
-    left: -12rem;
-    height: 35rem;
+    left: -10rem;
+    height: 25rem;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 1024px) {
@@ -848,9 +862,9 @@ textarea:not([rows]) {
 }
 @media screen and (max-width: 640px) {
   .p-shape__right {
-    top: 30rem;
+    top: 60%;
     right: -5rem;
-    height: 25rem;
+    height: 15rem;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 1024px) {

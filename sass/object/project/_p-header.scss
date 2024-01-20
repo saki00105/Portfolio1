@@ -57,13 +57,15 @@
         opacity: 0;
         @include m.sp{
             justify-content: center;
-            top: 33rem;
+            // top: 33rem;
+            top: 80%;
             left: 30%;
             width: 40%;
         }
         @include m.tab{
             justify-content: center;
-            top: 35rem;
+            // top: 35rem;
+            top: 75%;
             left: 35%;
             width: 35%;
         }

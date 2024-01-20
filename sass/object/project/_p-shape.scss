@@ -8,8 +8,8 @@
         
         @include m.sp{
             top: -5rem;
-            left: -12rem;
-            height: 35rem;
+            left: -10rem;
+            height: 25rem;
         }
         @include m.tab{
             top: -5rem;
@@ -29,9 +29,9 @@
         z-index: -100;
 
         @include m.sp{
-            top: 30rem;
+            top: 60%;
             right:-5rem;
-            height: 25rem;
+            height: 15rem;
             // height: 40%;
 
         }
