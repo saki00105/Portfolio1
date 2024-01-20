@@ -1,6 +1,17 @@
 @use "../../foundation/variable" as var;
 @use "../../foundation/mixin" as m;
 
+
+// #p-skills__gallery-img{
+//     >img{
+//         @include m.sp{
+//             height: 5rem;
+//             width: auto;
+//             object-fit: contain;
+//         }
+//     }
+// }
+
 .p-skills{
     margin-top: 12rem;
     // padding-top: 12rem;
@@ -17,11 +28,33 @@
         max-height: 70rem;
     }
     &__gallery {
-        margin-top: 5rem;
+        @include m.sp{
+            margin: 0 auto;
+            margin-top: 5rem;
+            width: 70%;
+        }
+        @include m.tab{
+            margin: 0 auto;
+            margin-top: 5rem;
+        }
+        @include m.pc{
+            margin: 0 auto;
+            margin-top: 5rem;
+            width: 70%;
+        }
         .wp-element-caption{
             margin-bottom: -2rem;
             background-image: none;
-        }   
+        } 
+        // &-img{
+        //     >img{
+        //         @include m.sp{
+        //             height: 5rem;
+        //             width: auto;
+        //             object-fit: contain;
+        //         }
+        //     }
+        // }  
     } 
     &__text{
         margin-top: 3rem;
@@ -37,15 +70,18 @@
 
         @include m.sp{
             min-height: 80rem;
-            top: 200px;
+            top: 15rem;
+
         }
         @include m.tab{
-            min-height: 60rem;
-            top: 250px;
+            min-height: 55rem;
+            top: 17rem;
+
         }
         @include m.pc{
             min-height: 70rem;
-            top: 250px;
+            top: 15rem;
+
         }
     }
     &__right{
