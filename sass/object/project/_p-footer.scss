@@ -2,8 +2,16 @@
 @use "../../foundation/mixin" as m;
 
 .p-footer{
-    padding-top: 5rem;
     text-align: center;
+    @include m.sp{
+        padding-top: 20rem;
+    }
+    @include m.tab{
+        padding-top: 15rem;
+    }
+    @include m.pc{
+        padding-top: 15rem;
+    }
     small{
         padding: 1rem;
     }
