@@ -163,7 +163,7 @@ window.addEventListener('scroll', togglePageTopAnimation);
   ScrollReveal({ reset: false, distance: '2rem', duration: 2000, viewFactor: 0.3});
   ScrollReveal().reveal("h2, .p-single__title, .p-skills__left", { delay: 500, origin: 'bottom' });
   ScrollReveal().reveal(".c-fw-500", { delay: 800, origin: 'bottom' });
-  ScrollReveal().reveal(".p-skills__right, .p-skills__gallery-img, .p-works__card", { delay: 300, origin: 'bottom', interval: 200 });
+  ScrollReveal().reveal(".p-skills__right, #p-skills__gallery-img, .p-works__card", { delay: 300, origin: 'bottom', interval: 200 });
   ScrollReveal().reveal(".snow-monkey-form", { delay: 300, origin: 'bottom' });
 // });
 
@@ -225,7 +225,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 //氷の表示
-const options = { threshold: 0.1 };
+const options = { threshold: 0.2 };
 
 const observer = new IntersectionObserver((entries, observer) => {
   entries.forEach(entry => {

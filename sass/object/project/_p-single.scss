@@ -3,6 +3,7 @@
 // @use "../project/p-skills";
 
 .p-single{
+    position: relative;
     @include m.sp{
         margin-top: 10rem;
     }
@@ -12,18 +13,35 @@
     @include m.pc{
         margin-top: 15rem;
     }
+    &__title{
+        position: absolute;
+        z-index: 1;
+        @include m.sp{
+            top: 10%;
+            left: 12%;
+        }
+        @include m.tab{
+            top: 10%;
+            left: 20%;        
+        }
+        @include m.pc{
+            top: 10%;
+            left: 25%;
+        }
+
+    }
     &__text{
         color: var.$white;
         line-height: 3rem;
-        @include m.sp{
-            margin-top: 20rem;
-        }
-        @include m.tab{
-            margin-top: 25rem;
-        }
-        @include m.pc{
-            margin-top: 22rem;
-        }
+        // @include m.sp{
+        //     margin-top: 20rem;
+        // }
+        // @include m.tab{
+        //     margin-top: 25rem;
+        // }
+        // @include m.pc{
+        //     margin-top: 22rem;
+        // }
         h3{
             margin-top: 2rem;    
         }
@@ -66,7 +84,7 @@
             min-height: 60rem;
         }
         @include m.tab{
-            min-height: 65rem;
+            min-height: 70rem;
         }
         @include m.pc{
             min-height: 70rem;

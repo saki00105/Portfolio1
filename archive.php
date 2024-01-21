@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
     <div class="p-single">
-        <!-- <?php
+        <?php
             if (has_nav_menu('hamburger_nav')) {
                 wp_nav_menu(
                 array(
@@ -12,9 +12,10 @@
                 )
                 );
             } 
-        ?> -->
+        ?>
 
-        <h2 class="l-inner__contact p-archive__title"><?php get_the_title();?>Warks</h2>
+        <!-- <h2 class="l-inner__contact p-archive__title"><?php get_the_title();?>Warks</h2> -->
+        <h2 class="l-inner__contact p-archive__title">Works</h2>
 
         <!-- <?php
             // ページのタイトルを取得

@@ -21,12 +21,12 @@ add_post_type_support('page', 'excerpt');
 add_theme_support('automatic-feed-links');
 
 // デフォルトjQueryの削除
-function delete_jquery() {
-    if (!is_admin()) {
-        wp_deregister_script('jquery');
-    }
-}
-add_action('init', 'delete_jquery');
+// function delete_jquery() {
+//     if (!is_admin()) {
+//         wp_deregister_script('jquery');
+//     }
+// }
+// add_action('init', 'delete_jquery');
 
 //jsの読み込み
 // function custom_print_scripts() {
@@ -91,7 +91,7 @@ add_action('after_setup_theme', 'theme_setup');
 
 // 投稿、archiveのヘッダーの非表示
 function hide_header_on_single_archive() {
-    if (is_single() || is_archive()) {
+    if (is_single() || is_archive() || is_404() ) {
         echo '<style>.l-header { display: none; }</style>';
     }
 }

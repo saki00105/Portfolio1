@@ -595,7 +595,7 @@ textarea:not([rows]) {
 @media screen and (min-width: 640px) and (max-width: 1024px) {
   .p-header__img {
     justify-content: center;
-    top: 75%;
+    top: 70%;
     left: 35%;
     width: 35%;
   }
@@ -1089,6 +1089,9 @@ textarea:not([rows]) {
   }
 }
 
+.p-single {
+  position: relative;
+}
 @media screen and (max-width: 640px) {
   .p-single {
     margin-top: 10rem;
@@ -1104,24 +1107,31 @@ textarea:not([rows]) {
     margin-top: 15rem;
   }
 }
-.p-single__text {
-  color: #ffffff;
-  line-height: 3rem;
+.p-single__title {
+  position: absolute;
+  z-index: 1;
 }
 @media screen and (max-width: 640px) {
-  .p-single__text {
-    margin-top: 20rem;
+  .p-single__title {
+    top: 10%;
+    left: 12%;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 1024px) {
-  .p-single__text {
-    margin-top: 25rem;
+  .p-single__title {
+    top: 10%;
+    left: 20%;
   }
 }
 @media screen and (min-width: 1024px) {
-  .p-single__text {
-    margin-top: 22rem;
+  .p-single__title {
+    top: 10%;
+    left: 25%;
   }
+}
+.p-single__text {
+  color: #ffffff;
+  line-height: 3rem;
 }
 .p-single__text h3 {
   margin-top: 2rem;
@@ -1157,7 +1167,7 @@ textarea:not([rows]) {
 }
 @media screen and (min-width: 640px) and (max-width: 1024px) {
   .p-single__center {
-    min-height: 65rem;
+    min-height: 70rem;
   }
 }
 @media screen and (min-width: 1024px) {
