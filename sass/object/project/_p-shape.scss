@@ -17,9 +17,10 @@
             height: 45rem;       
         }
         @include m.pc{
-            top: -5rem;
-            left: -13rem;
-            height: 50rem;
+            top: -10rem;
+            left: -10rem;
+            // height: 50rem;
+            width: 60%;
 
         }
 
@@ -46,6 +47,7 @@
             right:-5rem;
             height: 35rem;
             // height: 50%;
+            width: 40%;
 
         }
 

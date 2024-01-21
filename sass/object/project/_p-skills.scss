@@ -2,15 +2,27 @@
 @use "../../foundation/mixin" as m;
 
 
-// #p-skills__gallery-img{
-//     >img{
-//         @include m.sp{
-//             height: 5rem;
-//             width: auto;
-//             object-fit: contain;
-//         }
-//     }
-// }
+#p-skills__gallery-img{
+    >img{
+        @include m.sp{
+            height: 5rem;
+            // width: auto;
+            object-fit: contain;
+        }
+        @include m.tab{
+            // height: 5rem;
+            max-height: 7rem;
+            // width: auto;
+            object-fit: contain;
+        }
+        @include m.pc{
+            // height: 5rem;
+            max-height: 8rem;
+            // width: auto;
+            object-fit: contain;
+        }
+    }
+}
 
 .p-skills{
     margin-top: 12rem;
@@ -21,15 +33,33 @@
     z-index: -10;
     color: $bubble;
 
-    h2{
-        padding-top: 15rem;
-    }
+    // h2{
+    //     padding-top: 15rem;
+    // }
     @include m.pc{
         max-height: 70rem;
     }
+    &__contents{
+        position: absolute;
+        margin: 0 auto;
+        
+        @include m.sp{
+            top: 15%;
+            left: 20%;
+        }
+        @include m.tab{
+            top: 15%;
+            left: 15%;
+        }
+        @include m.pc{
+            top: 20%;
+            left: 25%;
+        }
+
+    }
     &__gallery {
         @include m.sp{
-            margin: 0 auto;
+            // margin: 0 auto;
             margin-top: 5rem;
             width: 70%;
         }
@@ -40,7 +70,7 @@
         @include m.pc{
             margin: 0 auto;
             margin-top: 5rem;
-            width: 70%;
+            // width: 70%;
         }
         .wp-element-caption{
             margin-bottom: -2rem;
@@ -62,11 +92,12 @@
     }
     &__center{
         // position: relative;
-        position: absolute;
+        // position: absolute;
         object-fit: cover;
         width: 100%;
         z-index: -10;
         opacity: 0;
+        padding-top: 15rem;
 
         @include m.sp{
             min-height: 80rem;
@@ -74,13 +105,16 @@
 
         }
         @include m.tab{
-            min-height: 55rem;
+            min-height: 70rem;
             top: 17rem;
 
         }
         @include m.pc{
-            min-height: 70rem;
+            min-height: 75rem;
+            max-width: 100rem;
             top: 15rem;
+            margin: 0 auto;
+
 
         }
     }
