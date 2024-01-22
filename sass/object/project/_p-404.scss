@@ -1,0 +1,25 @@
+@use "../../foundation/variable" as var;
+@use "../../foundation/mixin" as m;
+
+
+.p-404{
+    color: var.$white;
+    &__text{
+        font-size: clamp(1rem, 0.857rem + 1.786vw, 1.5rem);
+    }
+    &__button{
+        margin-top: 5rem;
+        color: var.$bubble;
+        font-size: clamp(1rem, 0.857rem + 1.786vw, 1.5rem);
+
+        > a{
+            // display: inline-block;
+            @extend .p-archive__button; // p-skills__centerのスタイルを再利用
+            background-color: var.$white;
+            // border-radius: 1rem;
+            width: 100%;
+        }
+       
+
+    }
+}

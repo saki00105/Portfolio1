@@ -378,6 +378,11 @@ textarea:not([rows]) {
   background-size: cover;
 }
 
+.l-404 {
+  margin-top: 25%;
+  text-align: center;
+}
+
 .c-line--marker {
   display: inline-block;
   position: relative;
@@ -463,6 +468,10 @@ textarea:not([rows]) {
 
 .c-fw-500 {
   font-weight: 500;
+}
+
+.c-fw-600 {
+  font-weight: 600;
 }
 
 .c-appear {
@@ -1220,28 +1229,28 @@ textarea:not([rows]) {
 .p-archive__card h3 {
   margin-top: 2rem;
 }
-.p-archive__button {
+.p-archive__button, .p-404__button > a {
   margin-top: 1.2rem;
   width: 100%;
   border-radius: 1rem;
   text-align: center;
 }
 @media screen and (max-width: 640px) {
-  .p-archive__button {
+  .p-archive__button, .p-404__button > a {
     padding: 0.5rem;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 1024px) {
-  .p-archive__button {
+  .p-archive__button, .p-404__button > a {
     padding: 1rem;
   }
 }
 @media screen and (min-width: 1024px) {
-  .p-archive__button {
+  .p-archive__button, .p-404__button > a {
     padding: 1rem;
   }
 }
-.p-archive__button:hover {
+.p-archive__button:hover, .p-404__button > a:hover {
   background-color: #729dd9;
 }
 
@@ -1266,6 +1275,22 @@ textarea:not([rows]) {
   .p-pagenation {
     width: 70%;
   }
+}
+
+.p-404 {
+  color: #ffffff;
+}
+.p-404__text {
+  font-size: clamp(1rem, 0.857rem + 1.786vw, 1.5rem);
+}
+.p-404__button {
+  margin-top: 5rem;
+  color: #064E93;
+  font-size: clamp(1rem, 0.857rem + 1.786vw, 1.5rem);
+}
+.p-404__button > a {
+  background-color: #ffffff;
+  width: 100%;
 }
 
 @media screen and (min-width: 600px) and (max-width: 640px) {
