@@ -379,7 +379,6 @@ textarea:not([rows]) {
 }
 
 .l-404 {
-  margin-top: 25%;
   text-align: center;
 }
 
@@ -1280,6 +1279,21 @@ textarea:not([rows]) {
 .p-404 {
   color: #ffffff;
 }
+@media screen and (max-width: 640px) {
+  .p-404 {
+    padding-top: 50%;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+  .p-404 {
+    padding-top: 40%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-404 {
+    padding-top: 25%;
+  }
+}
 .p-404__text {
   font-size: clamp(1rem, 0.857rem + 1.786vw, 1.5rem);
 }
@@ -1291,6 +1305,7 @@ textarea:not([rows]) {
 .p-404__button > a {
   background-color: #ffffff;
   width: 100%;
+  padding: 1rem;
 }
 
 @media screen and (min-width: 600px) and (max-width: 640px) {

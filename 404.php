@@ -6,7 +6,7 @@
 ?>
 
 <?php get_header(); ?>
-    <section class="l-inner__contents l-404">
+    <section class="l-inner__contact l-404">
         <div class="p-404">
             <p class="p-404__text">アクセスしたページは見つかりませんでした。</p>
             <p class="p-404__button c-fw-600">

@@ -4,6 +4,17 @@
 
 .p-404{
     color: var.$white;
+    @include m.sp{
+        padding-top: 50%;     
+
+    }
+    @include m.tab{
+        padding-top: 40%;     
+           
+    }
+    @include m.pc{
+        padding-top: 25%;     
+    }
     &__text{
         font-size: clamp(1rem, 0.857rem + 1.786vw, 1.5rem);
     }
@@ -13,11 +24,10 @@
         font-size: clamp(1rem, 0.857rem + 1.786vw, 1.5rem);
 
         > a{
-            // display: inline-block;
             @extend .p-archive__button; // p-skills__centerのスタイルを再利用
             background-color: var.$white;
-            // border-radius: 1rem;
             width: 100%;
+            padding: 1rem;
         }
        
 
