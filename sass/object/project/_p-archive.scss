@@ -5,9 +5,11 @@
 
 .p-archive{
     display: flex;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     color: var.$dark-blue;
     li{
+        display: flex;
+        align-items: stretch;
         @include m.sp{
             width: 100%;
         }
@@ -26,6 +28,9 @@
         color:var.$white;
     }
     &__card{
+        display: grid;
+        align-items: stretch;
+        height: 100%;
         background-color: var.$white;
         padding: 1.5rem;
         margin: 2rem 1rem;
