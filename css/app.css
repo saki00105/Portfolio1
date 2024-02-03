@@ -529,7 +529,7 @@ textarea:not([rows]) {
 }
 
 .p-header__layer {
-  background-image: url(http://localhost:10028/wp-content/uploads/2023/10/top-pc.png);
+  background-image: url(https://saki-pf.com/wp-content/uploads/2024/02/top-pc.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -940,7 +940,7 @@ textarea:not([rows]) {
 }
 .p-shape__nav {
   position: fixed;
-  z-index: 1;
+  z-index: 2;
 }
 @media screen and (max-width: 640px) {
   .p-shape__nav {
@@ -1191,8 +1191,12 @@ textarea:not([rows]) {
 
 .p-archive {
   display: flex;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
   color: #05316D;
+}
+.p-archive li {
+  display: flex;
+  align-items: stretch;
 }
 @media screen and (max-width: 640px) {
   .p-archive li {
@@ -1218,6 +1222,9 @@ textarea:not([rows]) {
   color: #ffffff;
 }
 .p-archive__card {
+  display: grid;
+  align-items: stretch;
+  height: 100%;
   background-color: #ffffff;
   padding: 1.5rem;
   margin: 2rem 1rem;
