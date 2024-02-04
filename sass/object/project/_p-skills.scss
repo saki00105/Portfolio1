@@ -25,7 +25,6 @@
 }
 
 .p-skills{
-    margin-top: 12rem;
     // padding-top: 12rem;
     position: relative;
     height: 110%;
@@ -33,19 +32,23 @@
     z-index: -10;
     color: $bubble;
 
-    // h2{
-    //     padding-top: 15rem;
-    // }
+    @include m.sp{
+        margin-top: 5rem;
+    }
+    @include m.tab{
+        margin-top: 12rem;
+    }
     @include m.pc{
         max-height: 70rem;
+        margin-top: 12rem;
     }
     &__contents{
         position: absolute;
         margin: 0 auto;
         
         @include m.sp{
-            top: 15%;
-            left: 20%;
+            top: 12%;
+            left: 10%;
         }
         @include m.tab{
             top: 15%;
