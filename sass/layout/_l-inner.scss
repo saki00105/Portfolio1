@@ -7,7 +7,7 @@
         // margin-top: 20rem;
         margin:  0 auto;
         @include m.sp{
-            width: 75%;
+            width: 85%;
         }
         @include m.tab{
             width: 65%;
@@ -17,22 +17,9 @@
         }
     }
     &__contact{
-        // margin-top: 50rem;
-         // @include m.sp{
-    //     // margin-top: 55rem;
-    //     padding-top: 55rem;
-    // }
-    // @include m.tab{
-    //     // margin-top: 25rem;
-    //     padding-top: 25rem;
-    // }
-    // @include m.pc{
-    //     // margin-top: 25rem;
-    //     padding-top: 25rem;
-    // }
         margin:  0 auto;
         @include m.sp{
-            width: 80%;
+            width: 90%;
         }
         @include m.tab{
             width: 75%;
