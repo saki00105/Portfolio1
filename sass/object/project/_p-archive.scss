@@ -8,16 +8,20 @@
     flex-wrap: wrap;
     color: var.$dark-blue;
     li{
-        display: flex;
-        align-items: stretch;
         @include m.sp{
             width: 100%;
+            display: flex;
+            align-items: stretch;
         }
         @include m.tab{
             width: 100%;
+            display: flex;
+            align-items: stretch;
         }
         @include m.pc{
             width: 50%;
+            display: flex;
+            align-items: stretch;
         }
     }
     img{
