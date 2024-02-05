@@ -683,7 +683,7 @@ textarea:not([rows]) {
 }
 @media screen and (min-width: 1024px) {
   .p-skills__contents {
-    top: 20%;
+    top: 15%;
     left: 25%;
   }
 }
@@ -1208,23 +1208,25 @@ textarea:not([rows]) {
   flex-wrap: wrap;
   color: #05316D;
 }
-.p-archive li {
-  display: flex;
-  align-items: stretch;
-}
 @media screen and (max-width: 640px) {
   .p-archive li {
     width: 100%;
+    display: flex;
+    align-items: stretch;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 1024px) {
   .p-archive li {
     width: 100%;
+    display: flex;
+    align-items: stretch;
   }
 }
 @media screen and (min-width: 1024px) {
   .p-archive li {
     width: 50%;
+    display: flex;
+    align-items: stretch;
   }
 }
 .p-archive img {
