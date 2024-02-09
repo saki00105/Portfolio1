@@ -1135,19 +1135,19 @@ textarea:not([rows]) {
 }
 @media screen and (max-width: 640px) {
   .p-single__title {
-    top: 10%;
+    top: 5%;
     left: 12%;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 1024px) {
   .p-single__title {
-    top: 10%;
+    top: 5%;
     left: 20%;
   }
 }
 @media screen and (min-width: 1024px) {
   .p-single__title {
-    top: 10%;
+    top: 5%;
     left: 25%;
   }
 }
@@ -1211,6 +1211,7 @@ textarea:not([rows]) {
 @media screen and (max-width: 640px) {
   .p-archive li {
     width: 100%;
+    margin-top: 1.5rem;
     display: flex;
     align-items: stretch;
   }
@@ -1218,6 +1219,7 @@ textarea:not([rows]) {
 @media screen and (min-width: 640px) and (max-width: 1024px) {
   .p-archive li {
     width: 100%;
+    margin-top: 1.5rem;
     display: flex;
     align-items: stretch;
   }
@@ -1225,6 +1227,7 @@ textarea:not([rows]) {
 @media screen and (min-width: 1024px) {
   .p-archive li {
     width: 50%;
+    margin-top: 1.5rem;
     display: flex;
     align-items: stretch;
   }
