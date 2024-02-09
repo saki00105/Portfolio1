@@ -10,16 +10,19 @@
     li{
         @include m.sp{
             width: 100%;
+            margin-top: 1.5rem;
             display: flex;
             align-items: stretch;
         }
         @include m.tab{
             width: 100%;
+            margin-top: 1.5rem;
             display: flex;
             align-items: stretch;
         }
         @include m.pc{
             width: 50%;
+            margin-top: 1.5rem;
             display: flex;
             align-items: stretch;
         }

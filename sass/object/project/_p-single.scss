@@ -17,15 +17,15 @@
         position: absolute;
         z-index: 1;
         @include m.sp{
-            top: 10%;
+            top: 5%;
             left: 12%;
         }
         @include m.tab{
-            top: 10%;
+            top: 5%;
             left: 20%;        
         }
         @include m.pc{
-            top: 10%;
+            top: 5%;
             left: 25%;
         }
 
