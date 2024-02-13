@@ -814,11 +814,6 @@ textarea:not([rows]) {
 .p-works {
   color: #ffffff;
 }
-@media screen and (min-width: 1024px) {
-  .p-works {
-    margin-top: 2%;
-  }
-}
 .p-works__text {
   margin-top: 5rem;
   line-height: 3rem;
@@ -889,12 +884,12 @@ textarea:not([rows]) {
 }
 @media screen and (min-width: 640px) and (max-width: 1024px) {
   .p-footer {
-    padding-top: 15rem;
+    padding-top: 25rem;
   }
 }
 @media screen and (min-width: 1024px) {
   .p-footer {
-    padding-top: 15rem;
+    padding-top: 25rem;
   }
 }
 .p-footer small {
@@ -1208,28 +1203,24 @@ textarea:not([rows]) {
   flex-wrap: wrap;
   color: #05316D;
 }
+.p-archive li {
+  display: flex;
+  align-items: stretch;
+  padding: 1rem;
+}
 @media screen and (max-width: 640px) {
   .p-archive li {
     width: 100%;
-    margin-top: 1.5rem;
-    display: flex;
-    align-items: stretch;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 1024px) {
   .p-archive li {
     width: 100%;
-    margin-top: 1.5rem;
-    display: flex;
-    align-items: stretch;
   }
 }
 @media screen and (min-width: 1024px) {
   .p-archive li {
     width: 50%;
-    margin-top: 1.5rem;
-    display: flex;
-    align-items: stretch;
   }
 }
 .p-archive img {
@@ -1246,7 +1237,6 @@ textarea:not([rows]) {
   height: 100%;
   background-color: #ffffff;
   padding: 1.5rem;
-  margin: 2rem 1rem;
   border-radius: 1rem;
   box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease 0s;

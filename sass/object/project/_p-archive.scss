@@ -8,23 +8,25 @@
     flex-wrap: wrap;
     color: var.$dark-blue;
     li{
+        display: flex;
+        align-items: stretch;
+        padding: 1rem;
         @include m.sp{
             width: 100%;
-            margin-top: 1.5rem;
-            display: flex;
-            align-items: stretch;
+            // margin-top: 1.5rem;
+            
         }
         @include m.tab{
             width: 100%;
-            margin-top: 1.5rem;
-            display: flex;
-            align-items: stretch;
+            // margin-top: 1.5rem;
+            // display: flex;
+            // align-items: stretch;
         }
         @include m.pc{
             width: 50%;
-            margin-top: 1.5rem;
-            display: flex;
-            align-items: stretch;
+            // margin-top: 1.5rem;
+            // display: flex;
+            // align-items: stretch;
         }
     }
     img{
@@ -40,7 +42,7 @@
         height: 100%;
         background-color: var.$white;
         padding: 1.5rem;
-        margin: 2rem 1rem;
+        // margin: 2rem 1rem;
         border-radius: 1rem;
         box-shadow: 0.5rem 0.5rem 0.5rem rgba(0,0,0,0.5);
         transition: all 0.3s ease 0s;
