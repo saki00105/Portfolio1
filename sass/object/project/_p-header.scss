@@ -18,7 +18,7 @@
     opacity: 0;
 
     @include m.sp{
-        padding-top: 20%;
+        padding-top: 35%;
         justify-content: center;
         // font-size: 2rem;
         font-size: clamp( 2rem, -0.83rem + 12.075vw, 4rem );

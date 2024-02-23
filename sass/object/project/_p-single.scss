@@ -33,15 +33,8 @@
     &__text{
         color: var.$white;
         line-height: 3rem;
-        // @include m.sp{
-        //     margin-top: 20rem;
-        // }
-        // @include m.tab{
-        //     margin-top: 25rem;
-        // }
-        // @include m.pc{
-        //     margin-top: 22rem;
-        // }
+        word-break: break-all;
+        margin-top: 22rem;
         h3{
             margin-top: 2rem;    
         }
