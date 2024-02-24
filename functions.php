@@ -39,7 +39,7 @@ function theme_setup() {
     register_nav_menus(
         array(
             'hamburger_nav' => esc_html__( 'ハンバーガーナビ', 'origin' ),
-            'footer_nav' => esc_html__( 'フッターナビ','origin' ),
+            'archive_nav' => esc_html__( 'アーカイブーナビ','origin' ),
         )
     );
 }

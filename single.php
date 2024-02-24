@@ -2,10 +2,10 @@
 
     <div class="p-single">
     <?php
-            if (has_nav_menu('hamburger_nav')) {
+            if (has_nav_menu('archive_nav')) {
                 wp_nav_menu(
                 array(
-                    'theme_location' => 'hamburger_nav',
+                    'theme_location' => 'archive_nav',
                     'container'       => 'nav',
                     'container_class' => 'p-nav',
                     'items_wrap'      => '<ul class="%2$s">%3$s</ul>',

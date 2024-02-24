@@ -1194,7 +1194,7 @@ textarea:not([rows]) {
 }
 @media screen and (max-width: 640px) {
   .p-single__center {
-    min-height: 60rem;
+    min-height: 52rem;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 1024px) {
