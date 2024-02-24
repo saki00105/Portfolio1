@@ -32,9 +32,17 @@
     }
     &__text{
         color: var.$white;
-        line-height: 3rem;
         word-break: break-all;
-        margin-top: 22rem;
+        // margin-top: 22rem;
+        @include m.sp{
+            line-height: 2rem;
+        }
+        @include m.tab{
+            line-height: 3rem;   
+        }
+        @include m.pc{
+            line-height: 3rem;
+        }
         h3{
             margin-top: 2rem;    
         }
@@ -44,29 +52,19 @@
             margin: 0 auto;
             @include m.sp{
                 max-width: 70%;
-                margin-top: 1rem;
+                margin-top: 4rem;
             }
             @include m.tab{
                 max-width: 60%;
-                margin-top: 1.5rem;    
+                margin-top: 3.5rem;    
             }
             @include m.pc{
                 max-width: 55%;
-                margin-top: 1.5rem;
+                margin-top: 3.5rem;
             }
         }
         &--sideways {
-            // margin: 0 auto;
             margin-top: 7rem;
-            // @include m.sp{
-            //     margin-top: 1rem;
-            // }
-            // @include m.tab{
-            //     margin-top: 1.5rem;    
-            // }
-            // @include m.pc{
-            //     margin-top: 1.5rem;
-            // }
         }
     }
     

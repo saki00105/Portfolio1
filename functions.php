@@ -1,16 +1,4 @@
 <?php
-
-// テーマの追加
-// add_theme_support('menus');
-
-// 以前のコード: add_theme_support("menus");
-// 新しいコード:
-// register_nav_menus( array(
-//     'primary-menu' => esc_html__( 'Primary Menu', 'your-theme-textdomain' ),
-//     // 他のメニューを必要に応じて追加できます
-// ) );
-
-
 //テーマサポート
 add_theme_support('title-tag');
 //サムネイル
@@ -20,37 +8,6 @@ add_post_type_support('page', 'excerpt');
 //フィードの設定
 add_theme_support('automatic-feed-links');
 
-// デフォルトjQueryの削除
-// function delete_jquery() {
-//     if (!is_admin()) {
-//         wp_deregister_script('jquery');
-//     }
-// }
-// add_action('init', 'delete_jquery');
-
-//jsの読み込み
-// function custom_print_scripts() {
-//     wp_enqueue_script('gsap-js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js', array(), '1.0.0', true);
-//     // wp_enqueue_script('scroll-js', 'https://unpkg.com/scrollreveal/dist/scrollreveal.min.js', array(), '1.0.0', true);
-//     wp_enqueue_script('scroll-js', 'https://unpkg.com/scrollreveal', array(), '1.0.0', true);
-
-//     wp_enqueue_script('js', get_theme_file_uri('/js/main.js'), array('scroll-js'), '1.0.0', true);
-// }
-// add_action('wp_enqueue_scripts', 'custom_print_scripts');
-
-
-// function custom_print_scripts() {
-//      // scrollreveal-js を読み込む
-//      wp_enqueue_script('scrollreveal-js', 'https://unpkg.com/scrollreveal/dist/scrollreveal.min.js', array(), '4.1.4', true);
-
-//     // gsap-js を読み込む
-//     wp_enqueue_script('gsap-js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js', array(), '3.12.3', true);
-
-   
-//     // その他のスクリプトやメインのスクリプトを読み込む
-//     wp_enqueue_script('main-js', get_theme_file_uri('/js/main.js'), array( 'scrollreveal-js','gsap-js'), '1.0.0', true);
-// }
-// add_action('wp_enqueue_scripts', 'custom_print_scripts');
 
 function custom_print_scripts() {
     // scrollreveal-js を読み込む

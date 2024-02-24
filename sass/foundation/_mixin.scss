@@ -8,9 +8,6 @@
 
 //ブレイクポイント
 $sp: 640px;
-
-// $sp-skill:600px
-
 $tab: 640px;
 $pc:1024px;
 
@@ -20,11 +17,6 @@ $pc:1024px;
       @content;
     }
 }
-// @mixin sp-skill {
-//   @media screen and (min-width: ($sp-skill) ) and (max-width:($tab)) {
-//     @content;
-//   }
-// }
 @mixin tab {
   @media screen and (min-width: ($tab) ) and (max-width:($pc)) {
     @content;
