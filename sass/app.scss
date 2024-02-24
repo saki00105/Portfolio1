@@ -13,16 +13,10 @@
 // Layout
 // ==========================================================================
 
-// @import "layout/_footer";
 @import "layout/_l-header";
-// @import "layout/_main";
-// @import "layout/_sidebar";
 @import "layout/_l-inner";
 @import "layout/_l-shape";
-@import "layout/_l-loader";
 @import "layout/_l-404";
-
-
 
 
 // ==========================================================================
@@ -33,9 +27,7 @@
 // Component
 // -----------------------------------------------------------------
 
-// @import "object/component/_button";
-// @import "object/component/_dialog";
-// @import "object/component/_grid";
+
 @import "object/component/_c-line";
 @import "object/component/_c-text";
 @import "object/component/_c-appear";
@@ -52,11 +44,6 @@
 // Project
 // -----------------------------------------------------------------
 
-// @import "object/project/_articles";
-// @import "object/project/_comments";
-// @import "object/project/_gallery";
-// @import "object/project/_profile";
-@import "object/project/_p-loader";
 @import "object/project/_p-header";
 @import "object/project/_p-skills";
 @import "object/project/_p-main";
@@ -80,10 +67,4 @@
 // Utility
 // -----------------------------------------------------------------
 
-// @import "object/utility/_align";
-// @import "object/utility/_clearfix";
-@import "object/utility/_u-margin";
 @import "object/utility/_u-height";
-// @import "object/utility/_position";
-// @import "object/utility/_size";
-// @import "object/utility/_text";
