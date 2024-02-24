@@ -4,18 +4,6 @@
 
 .p-works{
     color: var.$white;
-    // @include m.sp{
-    //     margin-top: 50rem;
-    //     // padding-top: 55rem;
-    // }
-    // @include m.tab{
-    //     margin-top: 25rem;
-    //     // padding-top: 25rem;
-    // }
-    // @include m.pc{
-    //     margin-top: 2%;
-    //     // padding-top: 25rem;
-    // }
 
     &__text{
         margin-top: 5rem;
@@ -35,18 +23,4 @@
             @extend .c-hover;
         }
     }
-    // &__blogcard{
-    //     > .wp-block-group__inner-container{
-    //             // @include m.sp{
-    //         // }
-    //         @include m.tab{
-    //             display:flex;
-    //             justify-content: space-between;
-    //         }
-    //         @include m.pc{
-    //             display:flex;
-    //             justify-content: space-between;
-    //         }
-    //     }   
-    // }
 }

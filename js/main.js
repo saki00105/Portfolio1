@@ -34,115 +34,6 @@ window.addEventListener('load', () => {
   startAnimation();
 });
 
-
-
-
-// //shape
-// function PageTopAnime() {
-//   var scroll = window.scrollY || document.documentElement.scrollTop;
-//   var pageTop = document.querySelectorAll('.c-appear');
-
-//   pageTop.forEach(function(pageTop){
-//     if (scroll >= 550) {
-//       // 上から200pxスクロールしたら
-//       pageTop.classList.remove('DownMove');
-//       pageTop.classList.add('UpMove');
-//     } else {
-//       if (pageTop.classList.contains('UpMove')) {
-//         // すでにUpMoveというクラス名がついていたら
-//         pageTop.classList.remove('UpMove');
-//         pageTop.classList.add('DownMove');
-//       }
-//     }
-//   });
-
- 
-// }
-
-// // 画面をスクロールしたら動かす
-// window.addEventListener('scroll', function () {
-//   PageTopAnime();
-// });
-
-// document.addEventListener('DOMContentLoaded', function() {
-//   ScrollReveal({ reset: false, distance: '2rem', duration: 2000, viewFactor: 0, threshold: 0.01 });
-//   ScrollReveal().reveal("h2, .p-single__title", { origin: 'bottom' });
-//   ScrollReveal().reveal(".c-fw-500", { delay: 100, origin: 'bottom' });
-//   ScrollReveal().reveal(".p-skills__left, .p-skills__right, .p-skills__gallery-img , .p-works__card ", {
-//     delay: 300,
-//     origin: 'bottom',
-//     interval: 200
-//   });
-//   ScrollReveal().reveal(".snow-monkey-form", { delay: 400, origin: 'bottom' });
-// });
-
-
-// console.log('テスト');
-
-
-// // //氷の表示
-// const options = {
-//   threshold: 0.3  // 30%以上が表示されたらコールバックを実行
-// };
-
-// const observer = new IntersectionObserver((entries, observer) => {
-//   entries.forEach(entry => {
-//     if (entry.isIntersecting) {
-//       // 要素が表示されたらアニメーションを再生
-//       if (entry.target.classList.contains('p-skills__center') || entry.target.classList.contains('p-contact__center')) {
-//         playAnimation(entry.target);
-//       }
-
-//       observer.unobserve(entry.target); // 一度だけ実行するためObserverを解除
-//     }
-//   });
-// }, options);
-
-// const playAnimation = (element) => {
-//   const animation = gsap.to(element, {
-//     duration: 4.5,
-//     ease: "elastic.out(1, 0.3)",
-//     y: -250,
-//     opacity: 1,
-//     paused: true  // 最初はアニメーションを一時停止
-//   });
-
-//   animation.play();
-// };
-
-// const frozenCenter = document.querySelector('.p-skills__center');
-// const frozenContactCenter = document.querySelector('.p-contact__center');
-
-// console.log('frozenCenter:', frozenCenter);
-// console.log('frozenContactCenter:', frozenContactCenter);
-
-// // 監視対象の要素をObserverに追加
-// observer.observe(frozenCenter);
-// observer.observe(frozenContactCenter);
-
-
-
-
-
-
-// const loading = document.querySelector('.l-loader');
-// const penguin = document.querySelector('.p-header__img');
-// const header = document.querySelector('.p-header');
-
-// // アニメーションを開始する関数
-// function startAnimation() {
-//   const tl = gsap.timeline();
-  
-//   tl.to(penguin, { duration: 4.5, ease: "elastic.out(1, 0.3)", y: -250, opacity: 1 })
-//     .to(header, { duration: 1, opacity: 1, ease: 'ease-out' }, '-=4');
-// }
-
-// // ウィンドウのloadイベントのリスナー
-// window.addEventListener('load', () => {
-//   loading.classList.add('l-loaded', 'p-loaded');
-//   startAnimation();
-// });
-
 //shape
 function togglePageTopAnimation() {
   const scroll = window.scrollY || document.documentElement.scrollTop;
@@ -166,18 +57,6 @@ window.addEventListener('scroll', togglePageTopAnimation);
   ScrollReveal().reveal(".p-skills__right, #p-skills__gallery-img, .p-works__card", { delay: 300, origin: 'bottom', interval: 200 });
   ScrollReveal().reveal(".snow-monkey-form", { delay: 300, origin: 'bottom' });
 // });
-
-
-// document.addEventListener('DOMContentLoaded', function() {
-//   const scrollReveal = ScrollReveal({ reset: false, distance: '2rem', duration: 2000, viewFactor: 0, threshold: 0.01 });
-
-//   scrollReveal.reveal("h2, .p-single__title", { origin: 'bottom' });
-//   scrollReveal.reveal(".c-fw-500", { delay: 100, origin: 'bottom' });
-//   scrollReveal.reveal(".p-skills__left, .p-skills__right, .p-skills__gallery-img, .p-works__card", { delay: 300, origin: 'bottom', interval: 200 });
-//   scrollReveal.reveal(".snow-monkey-form", { delay: 400, origin: 'bottom' });
-// });
-
-
 console.log('テスト');
 
 //ハンバーガーメニュー

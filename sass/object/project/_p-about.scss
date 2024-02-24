@@ -3,17 +3,13 @@
 
 .p-about{
     color: var.$white;
-    // margin-top: 10rem;
-    padding-top: 10rem;
     &__text{
         margin-top: 5rem;
         @include m.sp{
-            line-height: 2rem;
-  
+            line-height: 1.5rem;
         }
         @include m.tab{
             line-height: 3rem;
-   
         }
         @include m.pc{
             line-height: 3rem;
