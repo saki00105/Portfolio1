@@ -844,7 +844,7 @@ textarea:not([rows]) {
   margin-top: 5rem;
 }
 .p-contact .snow-monkey-form > .smf-form--business {
-  background-color: #DFE9F6;
+  background-color: #f7f7f7;
 }
 .p-contact .snow-monkey-form > .smf-form--business > .smf-item__col--label {
   background-color: #AEC7E9;
